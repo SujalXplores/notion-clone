@@ -9,6 +9,7 @@
 	--btn-primary-bg: #0075de;
 	--btn-primary-bg-hover: #015bab;
 	--default-box-shadow: 0px 20px 50px #00000014, 0px 6px 16px #0000000a;
+	--color-text-light: #0000008a;
 }
 
 html,
@@ -120,8 +121,11 @@ body {
 
 #main-container {
 	position: relative;
-	padding: 0 4rem;
 	z-index: 5;
+}
+
+#fall-hero-animation {
+	padding: 0 4rem;
 }
 
 #center-container {
@@ -133,6 +137,7 @@ body {
 	border: 1px solid var(--border-color);
 	border-radius: 8px;
 	box-shadow: var(--default-box-shadow);
+	aspect-ratio: 2560 / 1600;
 }
 
 #hero-animation-container {
@@ -156,7 +161,7 @@ body {
 
 #hero-am-heading {
 	text-wrap: balance;
-    text-align: center;
+	text-align: center;
 	width: 38%;
 	font-size: 4.55rem;
 	margin: 10px 0 0 0;
@@ -217,8 +222,97 @@ body {
 	background-color: #f2f9ff;
 }
 
-#product-image-container{
+#product-image-container {
 	margin-top: 2.2rem;
+}
+
+#logoWallStickyWrapper {
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	bottom: 0;
+	margin: 4rem auto 0 auto;
+	max-width: 100dvw;
+	background-color: var(--paper-background);
+	z-index: 10;
+}
+
+.sticky-sentinel {
+	height: 1px;
+	width: 100%;
+	max-width: 1320px;
+	background-color: var(--border-color);
+	mask-image: linear-gradient(
+		to right,
+		#0000,
+		#000 36px,
+		#000 calc(100% - 36px),
+		#0000 100%
+	);
+}
+
+#logoWallStickyWrapperContainer {
+	padding: 1.5rem 0 0 0;
+	max-width: 1252px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoWallImage {
+	width: 96px;
+	height: 24px;
+	display: flex;
+	height: fit-content;
+}
+
+.logoWallImage a {
+	position: relative;
+	padding: 8px 16px;
+	display: flex;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.logoWallImage a::after {
+	--dot-size: 0.25rem;
+	content: "";
+	transition: background-color 200ms ease-in;
+	background-color: #78736f;
+	block-size: var(--dot-size);
+	border-radius: 624.9375rem;
+	inline-size: 0.25rem;
+	inset-block-start: calc(50% - var(--dot-size) / 2);
+	inset-inline-end: 5px;
+	position: absolute;
+}
+
+.logoWallImage a:hover {
+	background-color: #f6f5f4;
+	border-radius: 0.5rem;
+}
+
+.logoWallImage a:hover::after {
+	background-color: #097fe8;
+}
+
+#logoWallImageContainer {
+	display: contents;
+}
+
+.normalImage {
+	display: contents;
+}
+
+#logoWallText {
+	color: var(--color-text-light);
+	margin: 0;
+	font-weight: 400;
+	min-width: 20ch;
 }
 
 @keyframes header-border {
@@ -259,4 +353,22 @@ body {
 	.hamburger-menu {
 		display: block;
 	}
+}
+
+#fall-lightGrayBg{
+	padding: 0 4rem;
+	background-color: #f6f5f4;
+}
+
+#bentoContainer {
+	margin: 0rem auto;
+	max-width: 1252px;
+	padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#intro-3 {
+	font-size: 3.85rem;
+	line-height: 56px;
+	margin: 0;
 }
