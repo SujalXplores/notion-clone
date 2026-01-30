@@ -10,13 +10,14 @@
 	--btn-primary-bg-hover: #015bab;
 	--default-box-shadow: 0px 20px 50px #00000014, 0px 6px 16px #0000000a;
 	--color-text-light: #0000008a;
+	--color-border: #0000001a;
 }
 
 html,
 body {
 	margin: 0;
 	padding: 0;
-	font-size: var(--md-font-size);
+	font-size: var(--lg-font-size);
 	font-weight: 500;
 	height: 100%;
 	overflow: auto;
@@ -67,6 +68,7 @@ body {
 	padding: 5px 12px;
 	text-decoration: none;
 	line-height: 20px;
+	font-size: var(--md-font-size);
 }
 
 .expandable-nav-link {
@@ -104,9 +106,10 @@ body {
 	border: none;
 	border-radius: 8px;
 	font-size: var(--md-font-size);
-	font-weight: 600;
+	font-weight: 400;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	letter-spacing: 0.1px;
 }
 
 .hamburger-menu {
@@ -141,30 +144,43 @@ body {
 }
 
 #hero-animation-container {
-	margin: 10px auto;
-	width: 100%;
+	margin: 10px auto 0px;
+	max-width: 768px;
 }
 
 #hero-animation {
 	display: block;
 	margin: auto;
-	width: 768px;
+	width: 100%;
+	height: auto;
+}
+
+#hero-am-content{
+	display: flex;
+	justify-content: center;
 }
 
 #hero-am-text-container {
 	display: flex;
 	flex-direction: column;
-	gap: 0.6rem;
-	max-width: 100%;
+	gap: 0.5rem;
 	align-items: center;
+	min-width: 450px;
+	max-width: 1200px;
+	box-sizing: border-box;
+	margin-top: 9px;
+	width: fit-content;
 }
 
 #hero-am-heading {
 	text-wrap: balance;
 	text-align: center;
-	width: 38%;
-	font-size: 4.55rem;
-	margin: 10px 0 0 0;
+	max-width: 55%;
+	font-size: 4rem;
+	margin: 0;
+	padding: 0;
+	text-wrap: balance;
+	text-align: center;
 	font-weight: 700;
 	cursor: default;
 	line-height: 64px;
@@ -174,11 +190,11 @@ body {
 	text-align: center;
 	text-wrap: balance;
 	font-weight: 400;
-	font-size: 1.4rem;
+	font-size: 1.25rem;
 	max-width: 700px;
 	margin: 0;
 	cursor: default;
-	word-spacing: 0.17rem;
+	word-spacing: 0.060rem;
 	line-height: 28px;
 }
 
@@ -223,7 +239,7 @@ body {
 }
 
 #product-image-container {
-	margin-top: 2.2rem;
+	margin-top: 1.8rem;
 }
 
 #logoWallStickyWrapper {
@@ -236,83 +252,58 @@ body {
 	margin: 4rem auto 0 auto;
 	max-width: 100dvw;
 	background-color: var(--paper-background);
-	z-index: 10;
-}
-
-.sticky-sentinel {
-	height: 1px;
-	width: 100%;
-	max-width: 1320px;
-	background-color: var(--border-color);
-	mask-image: linear-gradient(
-		to right,
-		#0000,
-		#000 36px,
-		#000 calc(100% - 36px),
-		#0000 100%
-	);
+	padding: 1.5rem 0;
 }
 
 #logoWallStickyWrapperContainer {
-	padding: 1.5rem 0 0 0;
-	max-width: 1252px;
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	row-gap: 16px;
 	align-items: center;
-}
-
-.logoWallImage {
-	width: 96px;
-	height: 24px;
-	display: flex;
-	height: fit-content;
-}
-
-.logoWallImage a {
 	position: relative;
-	padding: 8px 16px;
-	display: flex;
+	box-sizing: border-box;
+	max-width: 1252px;
+	width: 100%;
+}
+
+#logoWallText {
+	color: #0000008a;
 	margin: 0;
-	align-items: center;
-	justify-content: center;
-}
-
-.logoWallImage a::after {
-	--dot-size: 0.25rem;
-	content: "";
-	transition: background-color 200ms ease-in;
-	background-color: #78736f;
-	block-size: var(--dot-size);
-	border-radius: 624.9375rem;
-	inline-size: 0.25rem;
-	inset-block-start: calc(50% - var(--dot-size) / 2);
-	inset-inline-end: 5px;
-	position: absolute;
-}
-
-.logoWallImage a:hover {
-	background-color: #f6f5f4;
-	border-radius: 0.5rem;
-}
-
-.logoWallImage a:hover::after {
-	background-color: #097fe8;
+	font-weight: 400;
+	font-size: var(--md-font-size);
+	min-width: 20ch;
 }
 
 #logoWallImageContainer {
 	display: contents;
+	max-width: 100%;
+	width: 100%;
 }
 
-.normalImage {
-	display: contents;
+.logoWallImage {
+	max-width: 96px;
+	box-sizing: border-box;
+	position: relative;
 }
 
-#logoWallText {
-	color: var(--color-text-light);
-	margin: 0;
-	font-weight: 400;
-	min-width: 20ch;
+.logoWallImage a {
+	text-decoration: none;
+	position: relative;
+	margin-inline-start: calc(-1px - 1rem);
+	margin-inline-end: calc(-1px - 1rem);
+	margin-block-start: calc(-1px - 0.5rem);
+	margin-block-end: calc(-1px - 0.5rem);
+	width: 100%;
+}
+
+.dot {
+	width: 4px;
+	height: 4px;
+	background-color: #78736f;
+	border-radius: 100%;
+	position: absolute;
+	right: -20%;
+	top: 10%;
 }
 
 @keyframes header-border {
@@ -355,7 +346,7 @@ body {
 	}
 }
 
-#fall-lightGrayBg{
+#fall-lightGrayBg {
 	padding: 0 4rem;
 	background-color: #f6f5f4;
 }
@@ -363,12 +354,157 @@ body {
 #bentoContainer {
 	margin: 0rem auto;
 	max-width: 1252px;
-	padding-top: 4rem;
-    padding-bottom: 4rem;
+	padding: 4rem 0;
+	position: relative;
+	cursor: default;
 }
 
 #intro-3 {
 	font-size: 3.85rem;
 	line-height: 56px;
 	margin: 0;
+	margin-bottom: 2rem;
+}
+
+#bentoCarousel-container {
+	background-color: var(--paper-background);
+	display: grid;
+	grid-template: min-content auto / 1fr 2fr;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+#bentoCarousel-first {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+#badged-heading {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#badged-heading h4 {
+	margin: 0;
+	font-size: var(--lg-font-size);
+	font-weight: 400;
+	line-height: 24px;
+}
+
+#badged-heading div {
+	color: #005bab;
+	background-color: #f2f9ff;
+	font-size: var(--sm-font-size);
+	font-weight: 500;
+	padding: 2px 7px;
+	border-radius: 1000px;
+}
+
+#bentoCarousel-heading {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	text-wrap: balance;
+}
+
+#bentoCarousel-heading p {
+	margin: 0;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 700;
+}
+
+#arrow-right {
+	background-color: black;
+	width: 32px;
+	height: 32px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+}
+
+#arrow-right span {
+	color: white;
+}
+
+#bento-video-section {
+	background-image: url("https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F4OTM5AmiifFydzyiBJQ8EG%2F31a43265a305dd016808647741aebaf6%2Faccordion-background.jpg&w=3840&q=75");
+	background-size: cover;
+	grid-row: span 2;
+}
+
+#bento-video-container {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-block: 1.7rem 0;
+	padding-inline: 1.7rem 0;
+}
+
+#bento-video-container video {
+	aspect-ratio: 1584 / 1080;
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 16px;
+}
+
+#bentoCarousel-content {
+	position: relative;
+	padding: 8px;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.bentoCarousel-content-divider {
+	width: calc(100% - 24px);
+	height: 1px;
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #e5e5e5;
+}
+
+.bentoCarousel-content-buttons h4 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+	color: #000000e6;
+}
+
+.bentoCarousel-content-buttons {
+	padding: 16px;
+	margin: -1px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.bentoCarousel-content-buttons[aria-selected="false"]:hover {
+	background-color: #dfdcd9;
+	border-radius: 8px;
+}
+
+.bentoCarousel-content-buttons p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+	color: #00000096;
+	height: 48px;
+	transition: height 0.2s;
+	overflow: hidden;
+}
+
+.bentoCarousel-content-buttons[aria-selected="false"] p {
+	height: 0;
 }
