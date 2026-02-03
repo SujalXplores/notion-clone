@@ -180,80 +180,330 @@
 			<section id="fall-lightGrayBg">
 				<div id="bentoContainer">
 					<h2 id="intro-3">Introducing Notion 3.0</h2>
-					<section id="bentoCarousel-container">
-						<header id="bentoCarousel-first">
-							<div id="badged-heading">
-								<h4>Notion Agent</h4>
-								<div>New</div>
-							</div>
-							<div id="bentoCarousel-heading">
-								<p>You assign the tasks. Your Notion Agent does the work.</p>
-								<div id="arrow-right">
-									<span> → </span>
+					<div id="notion-3-container">
+						<section id="bentoCarousel-container">
+							<header id="bentoCarousel-first">
+								<div class="badged-heading">
+									<h4>Notion Agent</h4>
+									<div>New</div>
+								</div>
+								<div class="bentoCarousel-heading">
+									<p>You assign the tasks. Your Notion Agent does the work.</p>
+									<a
+										class="arrow-right"
+										href="https://www.notion.com/product/ai/use-cases"
+										target="_blank"
+									>
+										<span> → </span>
+									</a>
+								</div>
+							</header>
+							<div id="bento-video-section">
+								<div id="bento-video-container">
+									<video
+										id="slideAVideo"
+										src="https://videos.ctfassets.net/spoqsaf9291f/4sGOnBGgPUbz0AGPlK3hzu/e9c967ac116ab4e02a861e5a32968e6f/Slide_A_1584x1080_isolated_final_compressed_500k.mp4"
+										loop
+										autoplay
+									></video>
+									<div id="bento-button-containers">
+										<button id="bento-left-button">
+											<span id="left-arrow-button">
+												<svg
+													class="chevronLeft"
+													viewBox="0 0 9 15"
+													style="
+														width: 16px;
+														height: 16px;
+														display: block;
+														fill: inherit;
+														flex-shrink: 0;
+													"
+												>
+													<path
+														d="M.521 7.507c0 .29.108.54.34.755l6.458 6.325a.946.946 0 00.69.283.98.98 0 00.987-.988c0-.274-.116-.515-.299-.706l-5.819-5.67 5.82-5.669c.182-.19.298-.44.298-.705a.98.98 0 00-.988-.988c-.274 0-.506.1-.689.282L.861 6.743c-.232.224-.34.473-.34.764z"
+													></path>
+												</svg>
+											</span>
+										</button>
+										<button id="bento-right-button">
+											<span id="right-arrow-button">
+												<svg
+													class="chevronRight"
+													viewBox="0 0 9 15"
+													style="
+														width: 16px;
+														height: 16px;
+														display: block;
+														fill: inherit;
+														flex-shrink: 0;
+													"
+												>
+													<path
+														d="M8.696 7.507a1.08 1.08 0 00-.34-.764L1.896.426a.96.96 0 00-.689-.282.975.975 0 00-.987.988c0 .265.108.514.299.705l5.81 5.67-5.81 5.67a.979.979 0 00-.3.705c0 .556.432.988.988.988.266 0 .499-.1.69-.283l6.457-6.325a.988.988 0 00.34-.755z"
+													></path>
+												</svg>
+											</span>
+										</button>
+										<div class="bentoCarousel_noseyHat">
+											<div class="NoseyBento_noseyMediaContainer">
+												<div class="NoseyBento_noseyVideoMask">
+													<video
+														id="noseyduckclip"
+														src="https://www.notion.com/front-static/nosey/fall/clip_noseyDuck.mp4"
+														loop
+														autoplay
+													></video>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</header>
-						<div id="bento-video-section">
-							<div id="bento-video-container">
-								<video
-									src="https://videos.ctfassets.net/spoqsaf9291f/4sGOnBGgPUbz0AGPlK3hzu/e9c967ac116ab4e02a861e5a32968e6f/Slide_A_1584x1080_isolated_final_compressed_500k.mp4"
-									loop
-									autoplay
-								></video>
-							</div>
-						</div>
-						<div id="bentoCarousel-content">
-							<div style="display: contents; box-sizing: border-box">
-								<div
-									class="bentoCarousel-content-buttons"
-									id="hand-off"
-									aria-selected="true"
-								>
-									<h4>Hand off your busywork</h4>
-									<p>
-										What used to take days in minutes. Tell it your goal and
-										watch it work.
-									</p>
-								</div>
-								<hr class="bentoCarousel-content-divider" />
-								<div
-									class="bentoCarousel-content-buttons"
-									id="collaborates"
-									aria-selected="false"
-								>
-									<h4>Collaborates with your team</h4>
-									<p>
-										It's like having a built-in power user that works alongside
-										your team.
-									</p>
-								</div>
-								<hr class="bentoCarousel-content-divider" />
-								<div
-									class="bentoCarousel-content-buttons"
-									id="knows-everything"
-									aria-selected="false"
-								>
-									<h4>Knows everything you know</h4>
-									<p>
-										Searches all your pages, messages, files, and the web to
-										surface exactly what you need.
-									</p>
-								</div>
-								<hr class="bentoCarousel-content-divider" />
-								<div
-									class="bentoCarousel-content-buttons"
-									id="personalized"
-									aria-selected="false"
-								>
-									<h4>Personalized to you</h4>
-									<p>
-										Your Agent learns how you work. You control everything from
-										how it behaves to how it looks.
-									</p>
+							<div id="bentoCarousel-content">
+								<div style="display: contents; box-sizing: border-box">
+									<div
+										class="bentoCarousel-content-buttons"
+										id="hand-off"
+										aria-selected="true"
+									>
+										<h4>Hand off your busywork</h4>
+										<p>
+											What used to take days in minutes. Tell it your goal and
+											watch it work.
+										</p>
+									</div>
+									<hr class="bentoCarousel-content-divider" />
+									<div
+										class="bentoCarousel-content-buttons"
+										id="collaborates"
+										aria-selected="false"
+									>
+										<h4>Collaborates with your team</h4>
+										<p>
+											It's like having a built-in power user that works
+											alongside your team.
+										</p>
+									</div>
+									<hr class="bentoCarousel-content-divider" />
+									<div
+										class="bentoCarousel-content-buttons"
+										id="knows-everything"
+										aria-selected="false"
+									>
+										<h4>Knows everything you know</h4>
+										<p>
+											Searches all your pages, messages, files, and the web to
+											surface exactly what you need.
+										</p>
+									</div>
+									<hr class="bentoCarousel-content-divider" />
+									<div
+										class="bentoCarousel-content-buttons"
+										id="personalized"
+										aria-selected="false"
+									>
+										<h4>Personalized to you</h4>
+										<p>
+											Your Agent learns how you work. You control everything
+											from how it behaves to how it looks.
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+						<section id="bento-article-container">
+							<article id="custom-agents-container">
+								<header id="custom-agent-header">
+									<div class="badged-heading">
+										<h4>Custom Agents</h4>
+										<div>Coming Soon</div>
+									</div>
+									<div class="bentoCarousel-heading">
+										<p>Automate repetitive tasks.</p>
+										<a
+											class="arrow-right"
+											href="https://www.notion.com/product/custom-agents"
+											target="_blank"
+										>
+											<span> → </span>
+										</a>
+									</div>
+								</header>
+								<div id="bento_bentoImagesWrapper">
+									<picture id="custom-agents-first-picture">
+										<source
+											srcset="
+												https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F1ZnzlxMSxKOm8Anom6r6nc%2Fd880eee6605594a9c15974e5a8bba4f8%2Fen-US_agents-a-mobile.jpg&w=1920&q=75
+											"
+										/>
+										<img
+											src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F5sE5GLBT9su7AZWQzUp8tG%2F0f3f3a6fc5c2ddb82174a5b8f57c6798%2Fimage.png&w=1920&q=75"
+											alt=""
+										/>
+									</picture>
+									<picture id="custom-agents-second-picture">
+										<source
+											srcset="
+												https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F6CqTouuHuekEW4Y3WTi6T4%2Ff0660acb11684b5c78c72c96d21f7992%2Fen-US_agents-b-mobile.jpg&w=1920&q=75
+											" />
+										<img
+											src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F3ZLuTZxiiAEkG65LcdQEcq%2Fe540a03193deb64df564b18f5f879289%2Fen-US_agents-b.jpg&w=1920&q=75"
+											alt=""
+									/></picture>
+								</div>
+								<div class="bentoCarousel_noseyHat">
+									<div class="NoseyBento_noseyMediaContainer">
+										<div id="customAgentVideoMask">
+											<video
+												id="customAgentsVideo"
+												src="https://www.notion.com/front-static/nosey/fall/clip_customAgents.mp4"
+												loop
+												autoplay
+											></video>
+										</div>
+									</div>
+								</div>
+								<a
+									id="custom-agents-links"
+									href="https://www.notion.com/product/custom-agents"
+									target="_blank"
+								></a>
+							</article>
+							<article id="enterprise-search-container">
+								<header id="enterprise-search-header">
+									<h4>Enterprise Search</h4>
+									<div id="enterprise-search-heading">
+										<p>One search for everything.</p>
+										<a
+											class="arrow-right"
+											href="https://www.notion.com/product/enterprise-search"
+											target="_blank"
+										>
+											<span> → </span>
+										</a>
+									</div>
+								</header>
+								<div id="enterprise-content-wrapper">
+									<picture id="enterprise-search-picture">
+										<img
+											src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F5gAtostQzWHe0xapLDsst1%2F23d29524e34f0012354a2448d2311b16%2Fen-US_EnterpriseSearch.jpg&w=1920&q=75"
+											alt=""
+									/></picture>
+								</div>
+								<div class="bentoCarousel_noseyHat">
+									<div class="NoseyBento_noseyMediaContainer">
+										<div id="enterpriseSearchVideoMask">
+											<video
+												id="enterpriseSearchsVideo"
+												src="https://www.notion.com/front-static/nosey/fall/clip_noseyGlasses.mp4"
+												loop
+												autoplay
+											></video>
+										</div>
+									</div>
+								</div>
+								<a
+									id="enterprise-search-link"
+									href="https://www.notion.com/product/enterprise-search"
+									target="_blank"
+								></a>
+							</article>
+							<article id="ai-meetings-container">
+								<header id="ai-meetings-header">
+									<h4>AI Meetings Notes</h4>
+									<div id="ai-meetings-heading">
+										<p>Perfect notes, every time.</p>
+										<a
+											class="arrow-right"
+											href="https://www.notion.com/product/ai-meeting-notes"
+											target="_blank"
+										>
+											<span> → </span>
+										</a>
+									</div>
+								</header>
+								<div id="ai-meetings-content-wrapper">
+									<picture id="ai-meetings-picture">
+										<img
+											src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F6ryGYBBeFdl21HUR07Rf45%2F805485a867aec66c8aca2087dfd7cb19%2Fen-US_MeetingNotes.jpg&w=1920&q=75"
+											alt=""
+									/></picture>
+								</div>
+								<div class="bentoCarousel_noseyHat">
+									<div class="NoseyBento_noseyMediaContainer">
+										<div id="aiSettingsVideoMask">
+											<video
+												id="aiSettingsVideo"
+												src="https://www.notion.com/front-static/nosey/fall/clip_noseyHeadset.mp4"
+												loop
+												autoplay
+											></video>
+										</div>
+									</div>
+								</div>
+								<a
+									id="ai-settings-link"
+									href="https://www.notion.com/product/ai-meeting-notes"
+									target="_blank"
+								></a>
+							</article>
+							<article id="flexible-workflows-container">
+								<header id="flexible-workflows-header">
+									<h4>Flexible workflows</h4>
+									<div id="flexible-workflows-heading">
+										<p>Manage any project, big or small.</p>
+										<a
+											class="arrow-right"
+											href="https://www.notion.com/product/flexible-workflows"
+											target="_blank"
+										>
+											<span> → </span>
+										</a>
+									</div>
+								</header>
+								<div id="bento_bentoImagesWrapper">
+									<picture id="flexible-workflows-first-picture">
+										<source
+											srcset="
+												https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F1ZnzlxMSxKOm8Anom6r6nc%2Fd880eee6605594a9c15974e5a8bba4f8%2Fen-US_agents-a-mobile.jpg&w=1920&q=75
+											"
+										/>
+										<img
+											src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F5sE5GLBT9su7AZWQzUp8tG%2F0f3f3a6fc5c2ddb82174a5b8f57c6798%2Fimage.png&w=1920&q=75"
+											alt=""
+										/>
+									</picture>
+									<picture id="flexible-workflows-second-picture">
+										<source
+											srcset="
+												https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F6CqTouuHuekEW4Y3WTi6T4%2Ff0660acb11684b5c78c72c96d21f7992%2Fen-US_agents-b-mobile.jpg&w=1920&q=75
+											" />
+										<img
+											src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F3ZLuTZxiiAEkG65LcdQEcq%2Fe540a03193deb64df564b18f5f879289%2Fen-US_agents-b.jpg&w=1920&q=75"
+											alt=""
+									/></picture>
+								</div>
+								<div class="bentoCarousel_noseyHat">
+									<div class="NoseyBento_noseyMediaContainer">
+										<div id="customAgentVideoMask">
+											<video
+												id="customAgentsVideo"
+												src="https://www.notion.com/front-static/nosey/fall/clip_customAgents.mp4"
+												loop
+												autoplay
+											></video>
+										</div>
+									</div>
+								</div>
+								<a
+									id="flexible-workflows-links"
+									href="https://www.notion.com/product/custom-agents"
+									target="_blank"
+								></a>
+							</article>
+						</section>
+					</div>
 				</div>
 			</section>
 		</main>

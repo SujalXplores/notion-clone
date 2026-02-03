@@ -155,7 +155,7 @@ body {
 	height: auto;
 }
 
-#hero-am-content{
+#hero-am-content {
 	display: flex;
 	justify-content: center;
 }
@@ -194,7 +194,7 @@ body {
 	max-width: 700px;
 	margin: 0;
 	cursor: default;
-	word-spacing: 0.060rem;
+	word-spacing: 0.06rem;
 	line-height: 28px;
 }
 
@@ -206,7 +206,7 @@ body {
 }
 
 #hero-am-buttons button {
-	padding: 1rem 1.25rem;
+	padding: 0.875rem 1.25rem;
 	min-height: 2.875rem;
 	background-color: var(--btn-primary-bg);
 	color: #fff;
@@ -222,7 +222,7 @@ body {
 }
 
 #hero-am-buttons button:last-child {
-	padding: 1rem 1.25rem;
+	padding: 0.6875rem 1.25rem;
 	min-height: 2.875rem;
 	background-color: #e6f3fe;
 	color: #005bab;
@@ -239,7 +239,7 @@ body {
 }
 
 #product-image-container {
-	margin-top: 1.8rem;
+	margin-top: 2rem;
 }
 
 #logoWallStickyWrapper {
@@ -360,10 +360,17 @@ body {
 }
 
 #intro-3 {
-	font-size: 3.85rem;
+	font-size: 3.375rem;
 	line-height: 56px;
+	font-weight: 700;
 	margin: 0;
 	margin-bottom: 2rem;
+}
+
+#notion-3-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 #bentoCarousel-container {
@@ -374,6 +381,14 @@ body {
 	overflow: hidden;
 }
 
+#bentoCarousel-container:hover {
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
 #bentoCarousel-first {
 	padding: 24px;
 	display: flex;
@@ -381,20 +396,20 @@ body {
 	gap: 0.25rem;
 }
 
-#badged-heading {
+.badged-heading {
 	display: flex;
 	align-items: center;
 	gap: 8px;
 }
 
-#badged-heading h4 {
+.badged-heading h4 {
 	margin: 0;
 	font-size: var(--lg-font-size);
 	font-weight: 400;
 	line-height: 24px;
 }
 
-#badged-heading div {
+.badged-heading div {
 	color: #005bab;
 	background-color: #f2f9ff;
 	font-size: var(--sm-font-size);
@@ -403,21 +418,21 @@ body {
 	border-radius: 1000px;
 }
 
-#bentoCarousel-heading {
+.bentoCarousel-heading {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 	text-wrap: balance;
 }
 
-#bentoCarousel-heading p {
+.bentoCarousel-heading p {
 	margin: 0;
-	font-size: 22px;
+	font-size: 1.375rem;
 	line-height: 28px;
 	font-weight: 700;
 }
 
-#arrow-right {
+.arrow-right {
 	background-color: black;
 	width: 32px;
 	height: 32px;
@@ -426,9 +441,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
+	text-decoration: none;
 }
 
-#arrow-right span {
+.arrow-right span {
 	color: white;
 }
 
@@ -443,15 +459,123 @@ body {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
-	padding-block: 1.7rem 0;
-	padding-inline: 1.7rem 0;
+	padding-block: 1.5rem 0;
+	padding-inline: 1.5rem 0;
 }
 
-#bento-video-container video {
+#slideAVideo {
 	aspect-ratio: 1584 / 1080;
 	width: 100%;
 	height: auto;
 	border-top-left-radius: 16px;
+}
+
+#bento-button-containers {
+	position: absolute;
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 100%;
+	height: 100%;
+	padding-block: 1.5rem 0;
+	padding-inline: 1.5rem 0;
+}
+
+#bento-button-containers button {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#left-arrow-button {
+	position: absolute;
+	top: 50%;
+	padding: 8px;
+	background-color: var(--paper-background);
+	border-radius: 100%;
+	transform: translateY(-50%) scaleX(1);
+	border: 1px solid rgba(0, 0, 0, 0.075);
+	inset-inline-start: 16px;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+#right-arrow-button {
+	position: absolute;
+	border: 1px solid var(--border-color);
+	background-color: var(--paper-background);
+	border-radius: 100%;
+	top: 50%;
+	transform: translateY(-50%) scaleX(1);
+	padding: 8px;
+	inset-inline-end: 16px;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+.bentoCarousel_noseyHat {
+	--nosey-size: 9vw;
+	--nosey-size-max: 140px;
+	--nosey-size-min: 100px;
+	position: absolute;
+	inset-block-end: 0;
+	inset-inline-end: 0;
+	transform: scaleX(1);
+	pointer-events: none;
+	z-index: 3;
+}
+
+.NoseyBento_noseyMediaContainer {
+	position: relative;
+	width: 9vw;
+	height: 9vw;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 100px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+.NoseyBento_noseyVideoMask {
+	mask-image: url("https://www.notion.com/front-static/nosey/fall/mask_noseyDuck.png");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	position: relative;
+	width: 9vw;
+	height: 9vw;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 100px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+#noseyduckclip {
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+	opacity: 1;
+	aspect-ratio: 256/256;
 }
 
 #bentoCarousel-content {
@@ -507,4 +631,564 @@ body {
 
 .bentoCarousel-content-buttons[aria-selected="false"] p {
 	height: 0;
+}
+
+#bento-article-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 24px;
+}
+
+#custom-agents-container {
+	grid-column: span 2;
+	min-height: 280px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: var(--paper-background);
+	border-radius: 16px;
+	position: relative;
+	justify-content: space-between;
+	flex-direction: column;
+	overflow: hidden;
+	transition: box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#custom-agents-container:hover {
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+#custom-agent-header {
+	grid-column: 1;
+	padding: 1.5rem;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+#bento_bentoImagesWrapper {
+	display: grid;
+	background-color: #78736f;
+	flex-direction: row;
+	max-height: 400px;
+	overflow: hidden;
+	grid-template-columns: auto auto;
+	align-self: stretch;
+	justify-self: stretch;
+	z-index: 2;
+	width: 100%;
+	position: relative;
+}
+
+#custom-agents-first-picture {
+	margin-top: 96px;
+	z-index: 1;
+	align-items: start;
+	background-color: #fff;
+	border-start-start-radius: 0.75rem;
+	margin-inline-start: 24px;
+	margin-bottom: -16px;
+	border-top: 1px solid #0000001a;
+	border-inline-start: 1px solid #0000001a;
+	overflow: hidden;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	display: flex;
+}
+
+#custom-agents-first-picture img {
+	color: transparent;
+	transform: scale(1.4);
+	transform-origin: top left;
+	margin-top: 0;
+	position: relative;
+	width: 100%;
+	object-fit: contain;
+	height: auto;
+	max-height: 100%;
+	z-index: 2;
+	aspect-ratio: auto 1728 / 1055;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+#custom-agents-second-picture {
+	border-inline-start: 1px solid #0000001a;
+	margin-inline-start: 0;
+	z-index: 2;
+	align-items: start;
+	background-color: #fff;
+	border-start-start-radius: 0.75rem;
+	margin-top: 24px;
+	margin-bottom: -16px;
+	border-top: 1px solid #0000001a;
+	overflow: hidden;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	display: flex;
+}
+
+#custom-agents-second-picture img {
+	color: transparent;
+	transform: scale(1.4);
+	transform-origin: top left;
+	max-height: unset;
+	object-fit: unset;
+	height: auto;
+	position: relative;
+	width: 100%;
+	aspect-ratio: auto 1728 / 1206;
+	z-index: 2;
+}
+
+#customAgentVideoMask {
+	mask-image: url("https://www.notion.com/front-static/nosey/fall/mask_customAgents.png");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	position: relative;
+	width: 9vw;
+	height: 9vw;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 100px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+#customAgentsVideo {
+	aspect-ratio: 1584 / 1080;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 16px;
+}
+
+#custom-agents-links {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+#enterprise-search-container {
+	grid-column: span 1;
+	border-radius: 16px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	overflow: hidden;
+	transition: box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	background-color: var(--paper-background);
+}
+
+#enterprise-search-container:hover {
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+#enterprise-search-header {
+	padding: 1.5rem;
+}
+
+#enterprise-search-header h4 {
+	margin: 0;
+	margin-bottom: 8px;
+	font-size: var(--lg-font-size);
+	font-weight: 400;
+	line-height: 24px;
+}
+
+#enterprise-search-heading {
+	display: flex;
+	justify-content: space-between;
+}
+
+#enterprise-search-heading p {
+	margin: 0;
+	font-size: 1.375rem;
+	line-height: 28px;
+	font-weight: 700;
+}
+
+#enterprise-content-wrapper {
+	background-color: #f77463;
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+#enterprise-search-picture {
+	border-top-left-radius: 0.75rem;
+	border-top-right-radius: 0.75rem;
+	margin-top: 24px;
+	margin-inline-start: 24px;
+	margin-inline-end: 24px;
+	border-top: 1px solid #0000001a;
+	border-left: 1px solid #0000001a;
+	border-right: 1px solid #0000001a;
+	overflow: hidden;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	display: flex;
+}
+
+#enterprise-search-picture img {
+	color: transparent;
+	border-radius: 0;
+	width: 100%;
+	object-fit: contain;
+	height: auto;
+	max-height: 100%;
+	z-index: 2;
+	aspect-ratio: auto 1728 / 1176;
+}
+
+#enterpriseSearchVideoMask {
+	mask-image: url("https://www.notion.com/front-static/nosey/fall/mask_noseyGlasses.png");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	position: relative;
+	width: 9vw;
+	height: 9vw;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 100px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+#enterpriseSearchsVideo {
+	aspect-ratio: 1584 / 1080;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 16px;
+}
+
+#enterprise-search-link {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+#ai-meetings-container {
+	grid-column: span 1;
+	border-radius: 16px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	overflow: hidden;
+	transition: box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	background-color: var(--paper-background);
+}
+
+#ai-meetings-container:hover {
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+#ai-meetings-header {
+	padding: 1.5rem;
+}
+
+#ai-meetings-header h4 {
+	margin: 0;
+	margin-bottom: 8px;
+	font-size: var(--lg-font-size);
+	font-weight: 400;
+	line-height: 24px;
+}
+
+#ai-meetings-heading {
+	display: flex;
+	justify-content: space-between;
+}
+
+#ai-meetings-heading p {
+	margin: 0;
+	font-size: 1.375rem;
+	line-height: 28px;
+	font-weight: 700;
+}
+
+#ai-meetings-content-wrapper {
+	background-color: #62aef0;
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+#ai-meetings-picture {
+	border-top-left-radius: 0.75rem;
+	margin-top: 24px;
+	margin-inline-start: 24px;
+	margin-bottom: -16px;
+	border-top: 1px solid #0000001a;
+	border-left: 1px solid #0000001a;
+	overflow: hidden;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	display: flex;
+}
+
+#ai-meetings-picture img {
+	color: transparent;
+	border-radius: 0;
+	width: 100%;
+	object-fit: contain;
+	height: auto;
+	max-height: 100%;
+	z-index: 2;
+	aspect-ratio: auto 1728 / 1176;
+}
+
+#aiSettingsVideoMask {
+	mask-image: url("https://www.notion.com/front-static/nosey/fall/mask_noseyHeadset.png");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	position: relative;
+	width: 9vw;
+	height: 9vw;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 100px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+#aiSettingsVideo {
+	aspect-ratio: 1584 / 1080;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 16px;
+}
+
+#ai-settings-link {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+#flexible-workflows-container {
+	grid-column: span 2;
+	min-height: 280px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: var(--paper-background);
+	border-radius: 16px;
+	position: relative;
+	justify-content: space-between;
+	flex-direction: column;
+	overflow: hidden;
+	transition: box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#flexible-workflows-container:hover {
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+#flexible-workflows-header {
+	grid-column: 1;
+	padding: 1.5rem;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+#flexible-workflows-header h2{
+	margin: 0;
+	margin-bottom: 8px;
+	font-size: var(--lg-font-size);
+	font-weight: 400;
+	line-height: 24px;
+}
+
+#flexible-workflows-heading {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+#flexible-workflows-heading p{
+	max-width: 90%;
+	margin: 0;
+	font-size: 1.375rem;
+	line-height: 28px;
+	font-weight: 700;
+	text-wrap: balance;
+	box-sizing: border-box;
+}
+
+#bento_bentoImagesWrapper {
+	display: grid;
+	background-color: #78736f;
+	flex-direction: row;
+	max-height: 400px;
+	overflow: hidden;
+	grid-template-columns: auto auto;
+	align-self: stretch;
+	justify-self: stretch;
+	z-index: 2;
+	width: 100%;
+	position: relative;
+}
+
+#custom-agents-first-picture {
+	margin-top: 96px;
+	z-index: 1;
+	align-items: start;
+	background-color: #fff;
+	border-start-start-radius: 0.75rem;
+	margin-inline-start: 24px;
+	margin-bottom: -16px;
+	border-top: 1px solid #0000001a;
+	border-inline-start: 1px solid #0000001a;
+	overflow: hidden;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	display: flex;
+}
+
+#custom-agents-first-picture img {
+	color: transparent;
+	transform: scale(1.4);
+	transform-origin: top left;
+	margin-top: 0;
+	position: relative;
+	width: 100%;
+	object-fit: contain;
+	height: auto;
+	max-height: 100%;
+	z-index: 2;
+	aspect-ratio: auto 1728 / 1055;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+#custom-agents-second-picture {
+	border-inline-start: 1px solid #0000001a;
+	margin-inline-start: 0;
+	z-index: 2;
+	align-items: start;
+	background-color: #fff;
+	border-start-start-radius: 0.75rem;
+	margin-top: 24px;
+	margin-bottom: -16px;
+	border-top: 1px solid #0000001a;
+	overflow: hidden;
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	display: flex;
+}
+
+#custom-agents-second-picture img {
+	color: transparent;
+	transform: scale(1.4);
+	transform-origin: top left;
+	max-height: unset;
+	object-fit: unset;
+	height: auto;
+	position: relative;
+	width: 100%;
+	aspect-ratio: auto 1728 / 1206;
+	z-index: 2;
+}
+
+#customAgentVideoMask {
+	mask-image: url("https://www.notion.com/front-static/nosey/fall/mask_customAgents.png");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	position: relative;
+	width: 9vw;
+	height: 9vw;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 100px;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+#customAgentsVideo {
+	aspect-ratio: 1584 / 1080;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 16px;
+}
+
+#custom-agents-links {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
 }
