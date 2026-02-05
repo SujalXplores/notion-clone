@@ -18,11 +18,11 @@
 		/>
 	</head>
 	<body>
-		<header id="header-container">
-			<nav id="navbar">
-				<img src="./assets/logo.svg" id="logo" alt="Notion" />
-				<section id="nav-links-section">
-					<ul id="nav-links-list">
+		<header class="header-container">
+			<nav class="navbar">
+				<img src="./assets/logo.svg" class="logo" alt="Notion" />
+				<section class="nav-links-section">
+					<ul class="nav-links-list">
 						<li>
 							<a href="" class="nav-link-item expandable-nav-link">
 								Product <i class="fa-solid fa-chevron-down"></i>
@@ -48,9 +48,9 @@
 						<li><a class="nav-link-item" href="">Request a demo</a></li>
 					</ul>
 				</section>
-				<section id="auth-links">
+				<section class="auth-links">
 					<a class="nav-link-item login-btn" href="">Log in</a>
-					<button id="notion-free-btn">Get Notion free</button>
+					<button class="notion-free-btn">Get Notion free</button>
 					<img
 						src="./assets/menu.svg"
 						class="hamburger-menu"
@@ -60,33 +60,31 @@
 				</section>
 			</nav>
 		</header>
-		<main id="main-container">
-			<section id="fall-hero-animation">
-				<div id="center-container">
-					<div id="hero-animation-container">
-						<video id="hero-animation" width="100%" height="auto" loop muted>
-							<source
-								src="https://www.notion.com/front-static/pages/home/fall/hero/homepage-hero-animation.mp4"
-								type="video/mp4"
+		<main class="main-container">
+			<section class="fall-hero-animation">
+				<div class="center-container">
+					<div class="hero-animation-container">
+						<picture class="hero-animation" width="100%" height="auto" loop muted>
+							<img
+								src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fhome%2Ffall%2Fhero%2Fhomepage-hero-animation-lf.png&w=3840&q=75"
 							/>
-							Your browser does not support the video tag.
-						</video>
+						</picture>
 					</div>
-					<div id="hero-am-content">
-						<div id="hero-am-text-container">
-							<h1 id="hero-am-heading">One workspace. Zero busywork.</h1>
-							<h2 id="hero-am-subheading">
+					<div class="hero-am-content">
+						<div class="hero-am-text-container">
+							<h1 class="hero-am-heading">One workspace. Zero busywork.</h1>
+							<h2 class="hero-am-subheading">
 								Notion is where your teams and AI agents capture knowledge, find
 								answers, and automate projects. Now a team of 7 feels like 70.
 							</h2>
-							<div id="hero-am-buttons">
+							<div class="hero-am-buttons">
 								<button>Get Notion free</button>
 								<button>Request a demo</button>
 							</div>
 						</div>
 					</div>
-					<div id="product-image-container">
-						<video id="acme-inc" width="100%" height="auto" autoplay loop muted>
+					<div class="product-image-container">
+						<video class="acme-inc" width="100%" height="auto" autoplay loop muted>
 							<source
 								src="https://videos.ctfassets.net/spoqsaf9291f/60rdYX9BPk9yOnCdEb0nJC/a04c661d50bdad019963c8f9da70fa35/Desktop_HomepageHero_compressed_v007_650.mp4"
 								type="video/mp4"
@@ -95,10 +93,10 @@
 						</video>
 					</div>
 				</div>
-				<div id="logoWallStickyWrapper">
-					<div id="logoWallStickyWrapperContainer">
-						<p id="logoWallText">Trusted by top teams</p>
-						<div id="logoWallImageContainer">
+				<div class="logoWallStickyWrapper">
+					<div class="logoWallStickyWrapperContainer">
+						<p class="logoWallText">Trusted by top teams</p>
+						<div class="logoWallImageContainer">
 							<div class="logoWallImage">
 								<a href="https://www.notion.com/customers/figma">
 									<img
@@ -177,13 +175,13 @@
 					</div>
 				</div>
 			</section>
-			<section id="fall-lightGrayBg">
-				<div id="bentoContainer">
-					<h2 id="intro-3">Introducing Notion 3.0</h2>
-					<div id="fall-section">
-						<div id="notion-3-container">
-							<section id="bentoCarousel-container">
-								<header id="bentoCarousel-first">
+			<section class="fall-lightGrayBg">
+				<div class="bentoContainer">
+					<h2 class="intro-3">Introducing Notion 3.0</h2>
+					<div class="fall-section">
+						<div class="notion-3-container">
+							<section class="bentoCarousel-container">
+								<header class="bentoCarousel-first">
 									<div class="badged-heading">
 										<h4>Notion Agent</h4>
 										<div>New</div>
@@ -201,17 +199,17 @@
 										</a>
 									</div>
 								</header>
-								<div id="bento-video-section">
-									<div id="bento-video-container">
+								<div class="bento-video-section">
+									<div class="bento-video-container">
 										<video
-											id="slideAVideo"
+											class="slideAVideo"
 											src="https://videos.ctfassets.net/spoqsaf9291f/4sGOnBGgPUbz0AGPlK3hzu/e9c967ac116ab4e02a861e5a32968e6f/Slide_A_1584x1080_isolated_final_compressed_500k.mp4"
 											loop
 											autoplay
 										></video>
-										<div id="bento-button-containers">
-											<button id="bento-left-button">
-												<span id="left-arrow-button">
+										<div class="bento-button-containers">
+											<button class="bento-left-button">
+												<span class="left-arrow-button">
 													<svg
 														class="chevronLeft"
 														viewBox="0 0 9 15"
@@ -229,8 +227,8 @@
 													</svg>
 												</span>
 											</button>
-											<button id="bento-right-button">
-												<span id="right-arrow-button">
+											<button class="bento-right-button">
+												<span class="right-arrow-button">
 													<svg
 														class="chevronRight"
 														viewBox="0 0 9 15"
@@ -252,7 +250,7 @@
 												<div class="NoseyBento_noseyMediaContainer">
 													<div class="NoseyBento_noseyVideoMask">
 														<video
-															id="noseyduckclip"
+															class="noseyduckclip"
 															src="https://www.notion.com/front-static/nosey/fall/clip_noseyDuck.mp4"
 															loop
 															autoplay
@@ -263,11 +261,11 @@
 										</div>
 									</div>
 								</div>
-								<div id="bentoCarousel-content">
+								<div class="bentoCarousel-content">
 									<div style="display: contents; box-sizing: border-box">
 										<div
 											class="bentoCarousel-content-buttons"
-											id="hand-off"
+											class="hand-off"
 											aria-selected="true"
 										>
 											<h4>Hand off your busywork</h4>
@@ -279,7 +277,7 @@
 										<hr class="bentoCarousel-content-divider" />
 										<div
 											class="bentoCarousel-content-buttons"
-											id="collaborates"
+											class="collaborates"
 											aria-selected="false"
 										>
 											<h4>Collaborates with your team</h4>
@@ -291,7 +289,7 @@
 										<hr class="bentoCarousel-content-divider" />
 										<div
 											class="bentoCarousel-content-buttons"
-											id="knows-everything"
+											class="knows-everything"
 											aria-selected="false"
 										>
 											<h4>Knows everything you know</h4>
@@ -303,7 +301,7 @@
 										<hr class="bentoCarousel-content-divider" />
 										<div
 											class="bentoCarousel-content-buttons"
-											id="personalized"
+											class="personalized"
 											aria-selected="false"
 										>
 											<h4>Personalized to you</h4>
@@ -315,9 +313,9 @@
 									</div>
 								</div>
 							</section>
-							<section id="bento-article-container">
-								<article id="custom-agents-container">
-									<header id="custom-agent-header">
+							<section class="bento-article-container">
+								<article class="custom-agents-container" class="custom-agents-container">
+									<header class="custom-agent-header">
 										<div class="badged-heading">
 											<h4>Custom Agents</h4>
 											<div>Coming Soon</div>
@@ -333,14 +331,14 @@
 											</a>
 										</div>
 									</header>
-									<div id="bento_bentoImagesWrapper">
-										<picture id="custom-agents-first-picture">
+									<div class="bento_bentoImagesWrapper">
+										<picture class="custom-agents-first-picture">
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F5sE5GLBT9su7AZWQzUp8tG%2F0f3f3a6fc5c2ddb82174a5b8f57c6798%2Fimage.png&w=1920&q=75"
 												alt=""
 											/>
 										</picture>
-										<picture id="custom-agents-second-picture">
+										<picture class="custom-agents-second-picture">
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F3ZLuTZxiiAEkG65LcdQEcq%2Fe540a03193deb64df564b18f5f879289%2Fen-US_agents-b.jpg&w=1920&q=75"
 												alt=""
@@ -348,9 +346,10 @@
 									</div>
 									<div class="bentoCarousel_noseyHat">
 										<div class="NoseyBento_noseyMediaContainer">
-											<div id="customAgentVideoMask">
+											<div class="customAgentVideoMask">
 												<video
-													id="customAgentsVideo"
+													class="customAgentsVideo"
+													class="customAgentsVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_customAgents.mp4"
 													muted
 													playsinline
@@ -359,15 +358,15 @@
 										</div>
 									</div>
 									<a
-										id="custom-agents-links"
+										class="custom-agents-links"
 										href="https://www.notion.com/product/custom-agents"
 										target="_blank"
 									></a>
 								</article>
-								<article id="enterprise-search-container">
-									<header id="enterprise-search-header">
+								<article class="enterprise-search-container" class="enterprise-search-container">
+									<header class="enterprise-search-header">
 										<h4>Enterprise Search</h4>
-										<div id="enterprise-search-heading">
+										<div class="enterprise-search-heading">
 											<p>One search for everything.</p>
 											<a
 												class="arrow-right"
@@ -378,8 +377,8 @@
 											</a>
 										</div>
 									</header>
-									<div id="enterprise-content-wrapper">
-										<picture id="enterprise-search-picture">
+									<div class="enterprise-content-wrapper">
+										<picture class="enterprise-search-picture">
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F5gAtostQzWHe0xapLDsst1%2F23d29524e34f0012354a2448d2311b16%2Fen-US_EnterpriseSearch.jpg&w=1920&q=75"
 												alt=""
@@ -387,9 +386,10 @@
 									</div>
 									<div class="bentoCarousel_noseyHat">
 										<div class="NoseyBento_noseyMediaContainer">
-											<div id="enterpriseSearchVideoMask">
+											<div class="enterpriseSearchVideoMask">
 												<video
-													id="enterpriseSearchsVideo"
+													class="enterpriseSearchVideo"
+													class="enterpriseSearchVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_noseyGlasses.mp4"
 													muted
 													playsinline
@@ -398,15 +398,15 @@
 										</div>
 									</div>
 									<a
-										id="enterprise-search-link"
+										class="enterprise-search-link"
 										href="https://www.notion.com/product/enterprise-search"
 										target="_blank"
 									></a>
 								</article>
-								<article id="ai-meetings-container">
-									<header id="ai-meetings-header">
+								<article class="ai-meetings-container" class="ai-meetings-container">
+									<header class="ai-meetings-header">
 										<h4>AI Meetings Notes</h4>
-										<div id="ai-meetings-heading">
+										<div class="ai-meetings-heading">
 											<p>Perfect notes, every time.</p>
 											<a
 												class="arrow-right"
@@ -417,8 +417,8 @@
 											</a>
 										</div>
 									</header>
-									<div id="ai-meetings-content-wrapper">
-										<picture id="ai-meetings-picture">
+									<div class="ai-meetings-content-wrapper">
+										<picture class="ai-meetings-picture">
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F6ryGYBBeFdl21HUR07Rf45%2F805485a867aec66c8aca2087dfd7cb19%2Fen-US_MeetingNotes.jpg&w=1920&q=75"
 												alt=""
@@ -426,9 +426,10 @@
 									</div>
 									<div class="bentoCarousel_noseyHat">
 										<div class="NoseyBento_noseyMediaContainer">
-											<div id="aiSettingsVideoMask">
+											<div class="aiSettingsVideoMask">
 												<video
-													id="aiSettingsVideo"
+													class="aiSettingsVideo"
+													class="aiSettingsVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_noseyHeadset.mp4"
 													muted
 													playsinline
@@ -437,15 +438,15 @@
 										</div>
 									</div>
 									<a
-										id="ai-settings-link"
+										class="ai-settings-link"
 										href="https://www.notion.com/product/ai-meeting-notes"
 										target="_blank"
 									></a>
 								</article>
-								<article id="flexible-workflows-container">
-									<header id="flexible-workflows-header">
+								<article class="flexible-workflows-container" class="flexible-workflows-container">
+									<header class="flexible-workflows-header">
 										<h4>Flexible workflows</h4>
-										<div id="flexible-workflows-heading">
+										<div class="flexible-workflows-heading">
 											<p>Manage any project, big or small.</p>
 											<a
 												class="arrow-right"
@@ -456,15 +457,15 @@
 											</a>
 										</div>
 									</header>
-									<div id="flexible-workflows_ImagesWrapper">
-										<picture id="flexible-workflows-first-picture">
+									<div class="flexible-workflows_ImagesWrapper">
+										<picture class="flexible-workflows-first-picture">
 											<source srcset="" />
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F6lUfkjeFFFGQf7gJHNliJB%2Fb93a13cd68fcb9ea46ebb2fbceac3b22%2Fen-US-FlexibleWorkflows-a.jpg&w=1920&q=75"
 												alt=""
 											/>
 										</picture>
-										<picture id="flexible-workflows-second-picture">
+										<picture class="flexible-workflows-second-picture">
 											<source srcset="" />
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F4s1ajMF4hZFzpQhmJ3krbe%2Fb912106d16dea7bea898e8cfa0818e38%2Fen-US_FlexibleWorkflows-b.png&w=1920&q=75"
@@ -473,9 +474,10 @@
 									</div>
 									<div class="bentoCarousel_noseyHat">
 										<div class="NoseyBento_noseyMediaContainer">
-											<div id="flexibleWorkflowVideoMask">
+											<div class="flexibleWorkflowVideoMask">
 												<video
-													id="flexibleWorkflowsVideo"
+													class="flexibleWorkflowsVideo"
+													class="flexibleWorkflowsVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_noseySearching.mp4"
 													muted
 													playsinline
@@ -484,14 +486,14 @@
 										</div>
 									</div>
 									<a
-										id="flexible-workflows-links"
+										class="flexible-workflows-links"
 										href="https://www.notion.com/product/custom-agents"
 										target="_blank"
 									></a>
 								</article>
 							</section>
 						</div>
-						<div id="forbesQuote">
+						<div class="forbesQuote">
 							<p>Your AI everything app.</p>
 							<img
 								src="https://images.ctfassets.net/spoqsaf9291f/3FH43ruDfwZILGSgjnJ2sn/82bb2e9bfd3521c58e53a395bd72c6f6/forbes.png"
@@ -503,9 +505,9 @@
 					</div>
 				</div>
 			</section>
-			<section id="analytics-section">
-				<header id="analytics-header-container">
-					<div id="analytics-headings">
+			<section class="analytics-section">
+				<header class="analytics-header-container">
+					<div class="analytics-headings">
 						<h2>More productivity. Fewer tools.</h2>
 						<p>
 							Bring all your tools and teams under one roof. Calculate savings
@@ -515,127 +517,143 @@
 							>See pricing plans →</a
 						>
 					</div>
-					<div id="analytics-header-img-container">
+					<div class="analytics-header-img-container">
 						<img
 							src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F2FoagXHQUpf8Uw9jo5qEcQ%2F2e2e3542e9dc6635a0f706df48aa04d8%2Fasset-calculator.png&w=1200&q=75"
 							alt="Fasset-calculator"
-							id="fasset-calculator"
+							class="fasset-calculator"
 						/>
 					</div>
 				</header>
-				<div id="startup-pricing-calculator">
-					<div id="checkbox-section">
+				<div class="startup-pricing-calculator">
+					<div class="checkbox-section">
 						<div class="checkbox-container">
-							<input type="checkbox" name="aiSearch" />
+							<input type="checkbox" name="aiSearch" id="aiSearch" />
 							<label for="aiSearch"
 								>AI Search
 								<p class="price">$35/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="aiChatbot" />
+							<input type="checkbox" name="aiChatbot" id="aiChatbot" />
 							<label for="aiChatbot"
 								>AI Chatbot
 								<p class="price">$20/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="aiMeetingsNotes" />
+							<input
+								type="checkbox"
+								name="aiMeetingsNotes"
+								id="aiMeetingsNotes"
+							/>
 							<label for="aiMeetingsNotes"
 								>AI Meeting Notes
 								<p class="price">$18/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="aiWritingAssistant" />
+							<input
+								type="checkbox"
+								name="aiWritingAssistant"
+								id="aiWritingAssistant"
+							/>
 							<label for="aiWritingAssistant"
 								>AI Writing Assistant
 								<p class="price">$20/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="aiEmailApp" />
+							<input type="checkbox" name="aiEmailApp" id="aiEmailApp" />
 							<label for="aiEmailApp"
 								>AI Email App
 								<p class="price">$30/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="aiResearch" />
+							<input type="checkbox" name="aiResearch" id="aiResearch" />
 							<label for="aiResearch"
 								>AI Research
 								<p class="price">$40/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="calendarScheduling" />
+							<input
+								type="checkbox"
+								name="calendarScheduling"
+								id="calendarScheduling"
+							/>
 							<label for="calendarScheduling"
 								>Calendar Scheduling
 								<p class="price">$15/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="teamWiki" />
+							<input type="checkbox" name="teamWiki" id="teamWiki" />
 							<label for="teamWiki"
 								>Team Wiki
 								<p class="price">$10/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="projectManagement" />
+							<input
+								type="checkbox"
+								name="projectManagement"
+								id="projectManagement"
+							/>
 							<label for="projectManagement"
 								>Project Management Tool
 								<p class="price">$24/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="basicCRM" />
+							<input type="checkbox" name="basicCRM" id="basicCRM" />
 							<label for="basicCRM"
 								>Basic CRM
 								<p class="price">$20/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="siteBuilder" />
+							<input type="checkbox" name="siteBuilder" id="siteBuilder" />
 							<label for="siteBuilder"
 								>Site Builder
 								<p class="price">$20/user</p></label
 							>
 						</div>
 						<div class="checkbox-container">
-							<input type="checkbox" name="forms" />
+							<input type="checkbox" name="forms" id="forms" />
 							<label for="forms"
 								>Forms
 								<p class="price">$15/user</p></label
 							>
 						</div>
 					</div>
-					<div id="calculation-section">
-						<div id="team-size-section">
+					<div class="calculation-section">
+						<div class="team-size-section">
 							<p>Team size</p>
 							<input type="number" value="10" />
 						</div>
-						<div id="monthly-savings-section">
+						<div class="monthly-savings-section">
 							<p>Monthly savings</p>
 							<h2>$2470</h2>
 						</div>
-						<div id="annual-savings-section">
+						<div class="annual-savings-section">
 							<p>Annual savings</p>
 							<h2>$29,640</h2>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="social-proof-section">
-				<header id="social-proof-header-container">
-					<div id="social-proof-headings">
+			<section class="social-proof-section">
+				<header class="social-proof-header-container">
+					<div class="social-proof-headings">
 						<h2>Trusted by teams that ship.</h2>
 					</div>
 				</header>
-				<div id="social-proof-container">
-					<div class="social-proof-content" id="social-proof-openAi">
-						<div id="openAi-quote-container">
-							<div id="openAi-quote-block">
+				<div class="social-proof-container">
+					<div class="social-proof-content social-proof-openAi">
+						<div class="openAi-quote-container">
+							<div class="openAi-quote-block">
 								<img
 									src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2FjWkCPMAAj0Av69704DQoB%2F84499b606028b276e0bf94c238f07097%2FOpenAI-black-wordmark-cropped.png&w=1200&q=75"
 									alt=""
@@ -651,7 +669,7 @@
 								>
 							</div>
 						</div>
-						<div id="open-ai-image">
+						<div class="open-ai-image">
 							<img
 								src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F28Oz1efdtQCyLG1ocTdmHK%2F0dfc68573f753a757caea09a929baa07%2Fimage.png&w=1200&q=75"
 								alt=""
@@ -666,7 +684,7 @@
 							<img
 								src="https://images.ctfassets.net/spoqsaf9291f/1fJCIIjK31CRPMPj7Bp9Mu/eb1ea6eb7872170d426227da4ab898b6/toyota-red.svg"
 								alt="Toyota"
-								id="toyota"
+								class="toyota"
 							/>
 						</div>
 						<p>
@@ -681,7 +699,7 @@
 							<img
 								src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F4eiEZBWL5gEClwB1IHi18I%2Fb9b86479965977121ceabd01f45567a7%2Framp.png&w=1920&q=75"
 								alt="ramp"
-								id="ramp"
+								class="ramp"
 							/>
 						</div>
 						<p class="social-proof-quoted-text">
@@ -697,7 +715,7 @@
 							<img
 								src="https://images.ctfassets.net/spoqsaf9291f/15en0a60cYTRxNO1QlHbdg/f09657a6b8287f1db0e628a048267e2c/vercel-logotype-light.svg"
 								alt="vercel"
-								id="vercel"
+								class="vercel"
 							/>
 						</div>
 						<p class="social-proof-quoted-text">
@@ -713,7 +731,7 @@
 							<img
 								src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F2Z03v7BH2brwtBG2qdA5dp%2Fd6cd228d2f7b6048edcec9f4d5bcce3c%2Fmatch.png&w=640&q=75"
 								alt="match"
-								id="match"
+								class="match"
 							/>
 						</div>
 						<p class="social-proof-quoted-text">
@@ -729,7 +747,7 @@
 							<img
 								src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F3CSWr4Z4uIvbfO7102KPY%2Fbbd97c8edd0673853ac8dae2887a638d%2Fcursor.png&w=1080&q=75"
 								alt="cursor"
-								id="cursor"
+								class="cursor"
 							/>
 						</div>
 						<p class="social-proof-quoted-text">
@@ -745,7 +763,7 @@
 							<img
 								src="https://images.ctfassets.net/spoqsaf9291f/502ApiNcRHgIwrDU8XRYTQ/497492503acb3fa21bbd9dd1aec193c3/Figma-logo-color.svg"
 								alt="figma"
-								id="figma"
+								class="figma"
 							/>
 						</div>
 						<p>
@@ -754,9 +772,9 @@
 						</p>
 					</a>
 				</div>
-				<div id="marquee-container">
-					<div id="marquee">
-						<div id="marquee-track">
+				<div class="marquee-container">
+					<div class="marquee">
+						<div class="marquee-track">
 							<div class="marquee-content">
 								<p class="social-proof-stat">
 									<span class="social-proof-stat-icon"
@@ -1159,9 +1177,9 @@
 					</div>
 				</div>
 			</section>
-			<section id="aiUses-section">
-				<header id="aiUses-header-container">
-					<div id="aiUses-headings">
+			<section class="aiUses-section">
+				<header class="aiUses-header-container">
+					<div class="aiUses-headings">
 						<h2>Let Notion AI handle the busywork.</h2>
 						<p>Pick a use case to see how Notion does the work for you.</p>
 						<a
@@ -1170,15 +1188,15 @@
 							>Explore more →</a
 						>
 					</div>
-					<div id="aiUses-header-img-container">
+					<div class="aiUses-header-img-container">
 						<img
 							src="https://images.ctfassets.net/spoqsaf9291f/66v6l4XnHVR2L6Sr1lgZdW/b36806193b2a88b4d1e5e1cdb12de77b/asset-use-cases.png"
 							alt="asset-use-cases"
-							id="asset-use-cases"
+							class="asset-use-cases"
 						/>
 					</div>
 				</header>
-				<div id="aiUses-card-container">
+				<div class="aiUses-card-container">
 					<a
 						href="https://www.notion.com/product/ai/use-cases/go-from-brainstorm-to-roadmap"
 						target="_blank"
@@ -1349,15 +1367,15 @@
 					</a>
 				</div>
 			</section>
-			<section id="free-try-section">
-				<header id="free-try-header-container">
-					<div id="free-try-headings">
+			<section class="free-try-section">
+				<header class="free-try-header-container">
+					<div class="free-try-headings">
 						<h2>Try for free.</h2>
 					</div>
 				</header>
-				<div id="free-try-container">
-					<div id="design-system-container">
-						<div id="design-system-content">
+				<div class="free-try-container">
+					<div class="design-system-container">
+						<div class="design-system-content">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
@@ -1387,14 +1405,14 @@
 									></path>
 								</svg>
 							</svg>
-							<div id="design-system-heading">
+							<div class="design-system-heading">
 								<h3>Get started on Notion</h3>
 								<p>Your AI workspace with built-in agents.</p>
 							</div>
 							<div>
 								<a
 									href="https://www.notion.com/desktop/windows/download?from=marketing&pathname=%2F&tid=4569f2cc03c342f08e6a8d3f2606212a"
-									id="windows-download"
+									class="windows-download"
 									target="_blank"
 								>
 									<svg
@@ -1418,7 +1436,7 @@
 								</a>
 								<a
 									href="https://apps.microsoft.com/detail/XPDBVSS44R0L9H?referrer=appbadge&cid=notion_web_msbadge&mode=direct"
-									id="microsoft-store-download"
+									class="microsoft-store-download"
 									target="_blank"
 								>
 									<img
@@ -1428,14 +1446,14 @@
 								</a>
 							</div>
 						</div>
-						<div id="design-system-image-container">
+						<div class="design-system-image-container">
 							<img
 								src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fdownloads%2Fnotion%2Fen-US.png&w=1920&q=75"
 								alt=""
 							/>
 						</div>
 					</div>
-					<div id="free-mail-calendar-container">
+					<div class="free-mail-calendar-container">
 						<div class="notion-mail-calendar-section">
 							<div class="notion-mail-calendar-content">
 								<svg
@@ -1544,8 +1562,8 @@
 						</div>
 					</div>
 				</div>
-				<p id="downloadApps_browserText">
-					Notion is always at home right
+				<p class="downloadApps_browserText">
+					Notion is always at home right&nbsp;
 					<a href="https://www.notion.so/signup" target="_blank"
 						>in your browser</a
 					>.
@@ -1553,10 +1571,10 @@
 			</section>
 		</main>
 		<footer>
-			<div id="notion-license-container">
+			<div class="notion-license-container">
 				<a
 					href="https://www.notion.com/product"
-					id="notion-svg"
+					class="notion-svg"
 					target="_blank"
 				>
 					<svg
@@ -1602,11 +1620,13 @@
 						</defs>
 					</svg>
 				</a>
-				<div id="license-social-links">
-					<div id="social-links">
-						<a href=""
+				<div class="license-social-links">
+					<div class="social-links">
+						<a
+							href="https://www.instagram.com/notionhq/"
+							target="_blank"
+							class="shareInstagram"
 							><svg
-								class="shareInstagram"
 								viewBox="0 0 18 18"
 								style="
 									width: 18px;
@@ -1623,9 +1643,8 @@
 								></path>
 							</svg>
 						</a>
-						<a href="">
+						<a href="https://x.com/NotionHQ" target="_blank" class="shareX">
 							<svg
-								class="shareX"
 								viewBox="0 0 15 13"
 								style="
 									width: 20px;
@@ -1640,9 +1659,11 @@
 								></path>
 							</svg>
 						</a>
-						<a href="">
+						<a
+							href="https://www.linkedin.com/company/notionhq/"
+							class="shareLinkedIn"
+						>
 							<svg
-								class="shareLinkedIn"
 								viewBox="0 0 16 16"
 								style="
 									width: 20px;
@@ -1663,9 +1684,8 @@
 								></path>
 							</svg>
 						</a>
-						<a href="">
+						<a href="https://www.facebook.com/NotionHQ/" class="shareFacebook">
 							<svg
-								class="shareFacebook"
 								viewBox="0 0 18 18"
 								style="
 									width: 18px;
@@ -1680,9 +1700,11 @@
 								></path>
 							</svg>
 						</a>
-						<a href="">
+						<a
+							href="youtube.com/channel/UCoSvlWS5XcwaSzIcbuJ-Ysg"
+							class="shareYouTube"
+						>
 							<svg
-								class="shareYouTube"
 								viewBox="0 0 18 18"
 								style="
 									width: 18px;
@@ -1698,10 +1720,83 @@
 							</svg>
 						</a>
 					</div>
-					<div id="license-info"></div>
+					<div class="license-info">
+						<button>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								width="1em"
+								style="width: 16px; height: 16px; fill: var(--color-icon)"
+								class="NotionIconSvgWrapper_icon__8quiY"
+							>
+								<path
+									d="m6.25 6.013.675 1.8h-1.35zm1.86 1.443c.777-1.022 1.896-1.762 3.28-2.147C10.576 3.534 8.76 2.5 6.25 2.5 2.778 2.5.625 4.475.625 7.656c0 1.622.563 2.928 1.572 3.819L.625 13.047l.469.703a5.6 5.6 0 0 0 3.378-1.134 7.8 7.8 0 0 0 1.778.197c.256 0 .503-.016.747-.035a7.7 7.7 0 0 1-.122-1.372c0-.853.134-1.634.381-2.344h-2.15l-.35.938H3.437l1.876-5h1.875zm5.64 4.206c.31-.28.575-.621.75-1.037h-1.497c.175.416.44.756.75 1.037zm4.053 3.563 1.572 1.572-.469.703a5.6 5.6 0 0 1-3.378-1.134 7.8 7.8 0 0 1-1.778.197c-3.472 0-5.625-1.975-5.625-5.157S10.278 6.25 13.75 6.25s5.625 1.975 5.625 5.156c0 1.622-.562 2.928-1.572 3.819m-1.24-5.85h-2.188v-.937h-1.25v.937h-2.187v1.25h.778a4.4 4.4 0 0 0 1.006 1.725c-.863.425-1.681.544-1.681.544l.437 1.172a6.3 6.3 0 0 0 2.269-.87 6.3 6.3 0 0 0 2.269.87l.437-1.172s-.819-.119-1.681-.544a4.3 4.3 0 0 0 1.006-1.725h.778v-1.25z"
+									fill="currentColor"
+								></path>
+							</svg>
+							English (US)
+							<svg
+								class="navCaret"
+								viewBox="0 0 8 6"
+								style="
+									width: 8px;
+									height: 100%;
+									display: block;
+									fill: var(--color-icon);
+									flex-shrink: 0;
+								"
+							>
+								<path
+									d="m1 1 3 3 3-3"
+									stroke="currentColor"
+									stroke-width="1.5"
+									fill="none"
+								></path>
+							</svg>
+						</button>
+						<div></div>
+						<p class="cookie-settings">Cookie settings</p>
+						<div></div>
+						<p class="copyright">© 2026 Notion Labs, Inc.</p>
+					</div>
 				</div>
 			</div>
-			<div id="notion-links-container"></div>
+			<div class="notion-links-container">
+				<ul class="notion-links-content">
+					<h6>Company</h6>
+					<a href="">About us</a>
+					<a href="">Careers</a>
+					<a href="">Security</a>
+					<a href="">Status</a>
+					<a href="">Terms & privacy</a>
+					<a href="">Your privacy rights</a>
+				</ul>
+				<ul class="notion-links-content">
+					<h6>Download</h6>
+					<a href="">IOS & Android</a>
+					<a href="">Mac & Windows</a>
+					<a href="">Mail</a>
+					<a href="">Calendar</a>
+					<a href="">Web Clipper</a>
+				</ul>
+				<ul class="notion-links-content">
+					<h6>Resources</h6>
+					<a href="">Help center</a>
+					<a href="">Pricing</a>
+					<a href="">Blog</a>
+					<a href="">Community</a>
+					<a href="">Integrations</a>
+					<a href="">Templates</a>
+					<a href="">Partner programs</a>
+				</ul>
+				<ul class="notion-links-content">
+					<h6>Notion for</h6>
+					<a href="">Enterprise</a>
+					<a href="">Small Business</a>
+					<a href="">Personal</a>
+					<h5>Explore more <span>→</span></h5>
+				</ul>
+			</div>
 		</footer>
 		<script>
 			let bentoCarouselContentButtonsDiv = document.getElementsByClassName(
@@ -1736,7 +1831,7 @@
 				const container = document.getElementById(
 					"enterprise-search-container",
 				);
-				const video = document.getElementById("enterpriseSearchsVideo");
+				const video = document.getElementById("enterpriseSearchVideo");
 
 				container.addEventListener("mouseenter", () => {
 					video.play();
