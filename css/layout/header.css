@@ -85,9 +85,9 @@
 	display: none;
 }
 
-.hamburger-menu:active {
+/* .hamburger-menu:active {
 	display: none;
-}
+} */
 
 @keyframes header-border {
 	to {

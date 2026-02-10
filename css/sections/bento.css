@@ -43,11 +43,7 @@
 }
 
 .bentoCarousel-container:hover {
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .bentoCarousel-first {
@@ -157,11 +153,7 @@
 	transform: translateY(-50%) scaleX(1);
 	border: 1px solid rgba(0, 0, 0, 0.075);
 	inset-inline-start: 16px;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .right-arrow-button {
@@ -173,11 +165,7 @@
 	transform: translateY(-50%) scaleX(1);
 	padding: 8px;
 	inset-inline-end: 16px;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .bentoCarousel_noseyHat {
@@ -313,11 +301,7 @@
 }
 
 .custom-agents-container:hover {
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .custom-agent-header {
@@ -354,11 +338,7 @@
 	border-top: 1px solid var(--color-border);
 	border-inline-start: 1px solid var(--color-border);
 	overflow: hidden;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
 
@@ -389,11 +369,7 @@
 	margin-bottom: -16px;
 	border-top: 1px solid var(--color-border);
 	overflow: hidden;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
 
@@ -458,11 +434,7 @@
 }
 
 .enterprise-search-container:hover {
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .enterprise-search-header {
@@ -504,11 +476,7 @@
 	border-left: 1px solid var(--color-border);
 	border-right: 1px solid var(--color-border);
 	overflow: hidden;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
 
@@ -571,11 +539,7 @@
 }
 
 .ai-meetings-container:hover {
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .ai-meetings-header {
@@ -615,11 +579,7 @@
 	border-top: 1px solid var(--color-border);
 	border-left: 1px solid var(--color-border);
 	overflow: hidden;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
 
@@ -685,11 +645,7 @@
 }
 
 .flexible-workflows-container:hover {
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 }
 
 .flexible-workflows-header {
@@ -749,11 +705,7 @@
 	border-top: 1px solid var(--color-border);
 	border-inline-start: 1px solid var(--color-border);
 	overflow: hidden;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
 
@@ -783,11 +735,7 @@
 	margin-bottom: -16px;
 	border-top: 1px solid var(--color-border);
 	overflow: hidden;
-	box-shadow:
-		0px 4px 18px #0000000a,
-		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
-		0px 0.8px 2.925px #00000005,
-		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
 
