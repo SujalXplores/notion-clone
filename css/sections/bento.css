@@ -255,6 +255,9 @@
 	padding: 16px;
 	margin: -1px 0;
 	cursor: pointer;
+    border: none;
+    background-color: var(--paper-background);
+    text-align: start;
 }
 
 .bentoCarousel-content-buttons[aria-selected="false"]:hover {
@@ -284,6 +287,10 @@
 
 .sm-br-radius {
 	border-radius: var(--radius-xl);
+}
+
+.sm-bentoCarousel-content {
+	display: none;
 }
 
 .custom-agents-container {
@@ -981,19 +988,49 @@
 		margin-bottom: 16px;
 		line-height: normal;
 	}
-    .flexible-workflows-header h4 {
+	.flexible-workflows-header h4 {
 		line-height: normal;
 	}
 	.flexible-workflows_ImagesWrapper {
 		max-height: 309px;
 	}
-    .bento-article-container {
+	.bento-article-container {
 		gap: 1rem;
 	}
-    .sm-br-radius {
+	.sm-br-radius {
 		border-radius: 8px;
 	}
 	.notion-3-container {
 		gap: 1rem;
+	}
+}
+
+@media screen and (max-width: 1204px) {
+	.bentoCarousel-content {
+		display: none;
+	}
+	.sm-bentoCarousel-content {
+		display: block;
+		padding: 20px;
+	}
+
+	.bentoCarousel-content-buttons {
+		padding: 0;
+	}
+	.bentoCarousel-buttons {
+		margin-top: 16px;
+		display: flex;
+		gap: 8px;
+	}
+	.bentoCarousel-buttons button {
+		height: 10px;
+		width: 10px;
+		padding: 0;
+		border: none;
+		border-radius: 100%;
+		background-color: var(--default-background);
+	}
+	.bentoCarousel-buttons button:first-child {
+		background-color: #0000004d;
 	}
 }

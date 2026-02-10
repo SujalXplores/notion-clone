@@ -106,15 +106,16 @@
 
 .hero-am-buttons button:last-child {
 	padding: 0.6875rem 1.25rem;
-	min-height: 2.875rem;
+	min-height: 3rem;
 	background-color: #e6f3fe;
 	color: #005bab;
 	border: none;
 	border-radius: var(--radius-md);
 	font-size: var(--lg-font-size);
-	font-weight: 600;
+	font-weight: 500;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	line-height: 24px;
 }
 
 .hero-am-buttons button:last-child:hover {
@@ -132,7 +133,7 @@
 	align-items: center;
 	flex-direction: column;
 	bottom: 0;
-	margin: var(--space-xxl) auto 0 auto;
+	margin: 3.5rem auto 0 auto;
 	max-width: 100dvw;
 	background-color: var(--paper-background);
 	padding: var(--space-lg) 0;
@@ -154,6 +155,7 @@
 	font-weight: 400;
 	font-size: var(--md-font-size);
 	min-width: 20ch;
+	min-height: 20px;
 }
 
 .logoWallImageContainer {
@@ -295,6 +297,7 @@
 @media screen and (max-width: 400px) {
 	.fall-hero-animation {
 		padding: 0 var(--space-xl) var(--space-xl);
+		overflow-x: clip;
 	}
 	.center-container {
 		margin: 16px auto 0;
@@ -364,6 +367,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		max-width: 360px;
+		min-height: 57.7px;
 	}
 	.normalImage {
 		display: none;
