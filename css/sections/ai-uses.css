@@ -1,0 +1,133 @@
+.aiUses-section {
+	background-color: var(--paper-background);
+	padding: var(--space-xxl) 0;
+	position: relative;
+	margin: 0 auto;
+	max-width: var(--max-content-width);
+}
+
+.aiUses-header-container {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--space-lg);
+	margin: 0 auto var(--space-xl) auto;
+}
+
+.aiUses-headings {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.aiUses-headings h2 {
+	font-size: var(--font-size-lg-heading);
+	line-height: var(--lh-lg);
+	text-wrap: balance;
+
+	min-width: 628px;
+}
+
+.aiUses-headings p {
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+.aiUses-headings a {
+	text-decoration: none;
+	color: var(--btn-primary-bg);
+	font-weight: 400;
+}
+
+.aiUses-headings a:hover {
+	text-decoration: underline;
+	color: #00396b;
+}
+
+.aiUses-header-img-container {
+	display: flex;
+	align-items: end;
+	max-width: 480px;
+}
+
+.asset-use-cases {
+	width: 100%;
+	height: auto;
+}
+
+.aiUses-card-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--space-lg);
+}
+
+.aiUses-card {
+	border: 1px solid var(--border-color);
+	padding: var(--space-md);
+	border-radius: 0.75rem;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-md);
+}
+
+.aiUses-card:hover {
+	box-shadow:
+		0px 4px 18px #0000000a,
+		0px 2.025px 7.84688px rgba(0, 0, 0, 0.027),
+		0px 0.8px 2.925px #00000005,
+		0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+}
+
+.aiUses-card svg {
+	width: var(--space-lg);
+	height: var(--space-lg);
+}
+
+.aiUses-card svg path {
+	color: #a39e98;
+}
+
+.aiUses-card p {
+	min-height: 24px;
+	font-size: var(--font-size-base);
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	color: var(--color-text-main);
+}
+
+@media screen and (max-width: 400px) {
+	.aiUses-section {
+		padding: 2rem round(up, 7.22223vw, 0.2rem);
+	}
+	.aiUses-header-container {
+		flex-direction: column-reverse;
+	}
+	.aiUses-card-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: var(--space-sm);
+	}
+	.aiUses-headings h2 {
+		min-width: 100%;
+		font-size: var(--font-size-md);
+		text-wrap: balance;
+		min-width: 100%;
+		line-height: 40px;
+	}
+	.aiUses-header-img-container {
+		width: 90%;
+		max-width: 480px;
+	}
+	.aiUses-card {
+		padding: 0.75rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.aiUses-card p {
+		font-size: var(--font-size-sm);
+		display: block;
+		text-wrap: balance;
+	}
+}

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="./assets/logo.svg" />
 		<title>The AI workspace that works for you. | Notion</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -226,6 +226,7 @@
 											<source
 												src="https://videos.ctfassets.net/spoqsaf9291f/4sGOnBGgPUbz0AGPlK3hzu/e9c967ac116ab4e02a861e5a32968e6f/Slide_A_1584x1080_isolated_final_compressed_500k.mp4"
 												type="video/mp4"
+												id="slideAVideo"
 											/>
 											Your browser does not support the video tag.
 										</video>
@@ -287,7 +288,8 @@
 								<div class="bentoCarousel-content">
 									<div style="display: contents; box-sizing: border-box">
 										<div
-											class="bentoCarousel-content-buttons hand-off"
+											class="bentoCarousel-content-buttons"
+											id="hand-off"
 											aria-selected="true"
 										>
 											<h4>Hand off your busywork</h4>
@@ -298,7 +300,8 @@
 										</div>
 										<hr class="bentoCarousel-content-divider" />
 										<div
-											class="bentoCarousel-content-buttons collaborates"
+											class="bentoCarousel-content-buttons"
+											id="collaborates"
 											aria-selected="false"
 										>
 											<h4>Collaborates with your team</h4>
@@ -309,7 +312,8 @@
 										</div>
 										<hr class="bentoCarousel-content-divider" />
 										<div
-											class="bentoCarousel-content-buttons knows-everything"
+											class="bentoCarousel-content-buttons"
+											id="knows-everything"
 											aria-selected="false"
 										>
 											<h4>Knows everything you know</h4>
@@ -320,7 +324,8 @@
 										</div>
 										<hr class="bentoCarousel-content-divider" />
 										<div
-											class="bentoCarousel-content-buttons personalized"
+											class="bentoCarousel-content-buttons"
+											id="personalized"
 											aria-selected="false"
 										>
 											<h4>Personalized to you</h4>
@@ -675,8 +680,8 @@
 					</div>
 					<div class="calculation-section">
 						<div class="team-size-section">
-							<p>Team size</p>
-							<input type="number" value="10" />
+							<label for="teamSize">Team size</label>
+							<input type="number" id="teamSize" value="10" />
 						</div>
 						<div class="monthly-savings-section">
 							<p>Monthly savings</p>
@@ -1695,6 +1700,7 @@
 							href="https://www.instagram.com/notionhq/"
 							target="_blank"
 							class="shareInstagram"
+							rel="noopener noreferrer"
 							><svg
 								viewBox="0 0 18 18"
 								style="
@@ -1712,7 +1718,12 @@
 								></path>
 							</svg>
 						</a>
-						<a href="https://x.com/NotionHQ" target="_blank" class="shareX">
+						<a
+							href="https://x.com/NotionHQ"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="shareX"
+						>
 							<svg
 								viewBox="0 0 15 13"
 								style="
@@ -1730,7 +1741,9 @@
 						</a>
 						<a
 							href="https://www.linkedin.com/company/notionhq/"
+							target="_blank"
 							class="shareLinkedIn"
+							rel="noopener noreferrer"
 						>
 							<svg
 								viewBox="0 0 16 16"
@@ -1753,7 +1766,12 @@
 								></path>
 							</svg>
 						</a>
-						<a href="https://www.facebook.com/NotionHQ/" class="shareFacebook">
+						<a
+							href="https://www.facebook.com/NotionHQ/"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="shareFacebook"
+						>
 							<svg
 								viewBox="0 0 18 18"
 								style="
@@ -1770,8 +1788,10 @@
 							</svg>
 						</a>
 						<a
-							href="youtube.com/channel/UCoSvlWS5XcwaSzIcbuJ-Ysg"
+							href="https://www.youtube.com/channel/UCoSvlWS5XcwaSzIcbuJ-Ysg"
 							class="shareYouTube"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							<svg
 								viewBox="0 0 18 18"
@@ -1833,38 +1853,64 @@
 			<div class="notion-links-container">
 				<ul class="notion-links-content">
 					<li><h6>Company</h6></li>
-					<li><a href="">About us</a></li>
-					<li><a href="">Careers</a></li>
-					<li><a href="">Security</a></li>
-					<li><a href="">Status</a></li>
-					<li><a href="">Terms & privacy</a></li>
-					<li><a href="">Your privacy rights</a></li>
+					<li><a href="https://www.notion.com/about">About us</a></li>
+					<li><a href="https://www.notion.com/careers">Careers</a></li>
+					<li><a href="https://www.notion.com/security">Security</a></li>
+					<li><a href="https://www.notion-status.com/">Status</a></li>
+					<li>
+						<a
+							href="https://www.notion.so/notion/Terms-and-Privacy-28ffdd083dc3473e9c2da6ec011b58ac"
+							>Terms & privacy</a
+						>
+					</li>
+					<li>
+						<a href="https://www.notion.com/trust/privacy-policy#california"
+							>Your privacy rights</a
+						>
+					</li>
 				</ul>
 				<ul class="notion-links-content">
 					<li><h6>Download</h6></li>
-					<li><a href="">IOS & Android</a></li>
-					<li><a href="">Mac & Windows</a></li>
-					<li><a href="">Mail</a></li>
-					<li><a href="">Calendar</a></li>
-					<li><a href="">Web Clipper</a></li>
+					<li><a href="https://www.notion.com/mobile">IOS & Android</a></li>
+					<li><a href="https://www.notion.com/desktop">Mac & Windows</a></li>
+					<li>
+						<a href="https://www.notion.com/product/mail/download">Mail</a>
+					</li>
+					<li>
+						<a href="https://www.notion.com/product/calendar/download"
+							>Calendar</a
+						>
+					</li>
+					<li><a href="https://www.notion.com/web-clipper">Web Clipper</a></li>
 				</ul>
 				<ul class="notion-links-content">
 					<li><h6>Resources</h6></li>
-					<li><a href="">Help center</a></li>
-					<li><a href="">Pricing</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Community</a></li>
-					<li><a href="">Integrations</a></li>
-					<li><a href="">Templates</a></li>
-					<li><a href="">Partner programs</a></li>
+					<li><a href="https://www.notion.com/help">Help center</a></li>
+					<li><a href="https://www.notion.com/pricing">Pricing</a></li>
+					<li><a href="https://www.notion.com/blog">Blog</a></li>
+					<li>
+						<a
+							href="https://www.notion.so/notion/Notion-Community-04f306fbf59a413fae15f42e2a1ab029"
+							>Community</a
+						>
+					</li>
+					<li>
+						<a href="https://www.notion.com/integrations">Integrations</a>
+					</li>
+					<li><a href="http://notion.com/templates">Templates</a></li>
+					<li>
+						<a href="https://www.notion.com/partners">Partner programs</a>
+					</li>
 				</ul>
 				<ul class="notion-links-content">
 					<li><h6>Notion for</h6></li>
-					<li><a href="">Enterprise</a></li>
-					<li><a href="">Small Business</a></li>
-					<li><a href="">Personal</a></li>
-					<li>
-						<h5>Explore more <span>→</span></h5>
+					<li><a href="https://www.notion.com/enterprise">Enterprise</a></li>
+					<li><a href="https://www.notion.com/teams">Small Business</a></li>
+					<li><a href="https://www.notion.com/personal">Personal</a></li>
+					<li id="explore-more">
+						<a href="https://www.notion.com/explore"
+							><h5>Explore more <span>→</span></h5></a
+						>
 					</li>
 				</ul>
 			</div>
