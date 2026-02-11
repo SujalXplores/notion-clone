@@ -20,8 +20,7 @@
 	font-size: var(--font-size-lg-heading);
 	line-height: var(--lh-lg);
 	text-wrap: balance;
-
-	min-width: 628px;
+	min-width: min(628px, 100%);
 }
 
 .social-proof-container {
@@ -36,7 +35,7 @@
 	padding: var(--space-lg);
 	max-width: var(--max-content-width);
 	margin: 0 auto;
-	border-radius: .75rem;
+	border-radius: 0.75rem;
 	background-color: var(--paper-background);
 	width: 100%;
 }
@@ -384,13 +383,13 @@
 	.marquee {
 		margin-inline: calc(-1 * 1.8rem);
 	}
-    .marquee-container {
+	.marquee-container {
 		margin-top: 8px;
 	}
-    .social-proof-card {
+	.social-proof-card {
 		gap: 8px;
 	}
-	.social-proof-content{
+	.social-proof-content {
 		padding: 24px;
 	}
 }

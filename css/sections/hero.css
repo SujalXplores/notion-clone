@@ -350,9 +350,6 @@
 	.hero-am-buttons button {
 		width: 100%;
 	}
-	.product-image-container {
-		display: none;
-	}
 	.logoWallStickyWrapper {
 		position: relative;
 		padding: 0;
@@ -383,14 +380,15 @@
 
 @media screen and (min-width: 840px) {
 	.logoWallStickyWrapper::before {
+		position: absolute;
+		content: "";
+		inline-size: 100vw;
+		inset-block: 0;
+		inset-inline-start: 50%;
 		animation: hover-border linear both;
 		animation-timeline: view();
 		animation-range: entry 0 entry 100%;
 		transition: none;
-		content: "";
-		inline-size: 100vw;
-		inset-block: 0;
-		position: absolute;
 		transform: translateX(-50%);
 		z-index: -1;
 	}
@@ -429,10 +427,34 @@
 
 	@keyframes hover-border {
 		0% {
-			background-color: #0000;
+			background-color: var(--paper-background);
 		}
 		100% {
-			background-color: var(--paper-background, var(--paper-background));
+			background-color: var(--paper-background);
 		}
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.hero-am-heading {
+		font-size: var(--font-size-lg-heading);
+	}
+	.product-image-container {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.hero-am-heading {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.volvoContainer,
+	.perplexityContainer {
+		display: none;
+	}
+	.fall-hero-animation {
+		margin-top: var(--space-md);
 	}
 }

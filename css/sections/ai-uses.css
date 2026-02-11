@@ -22,7 +22,7 @@
 	font-size: var(--font-size-lg-heading);
 	line-height: var(--lh-lg);
 	text-wrap: balance;
-	min-width: 628px;
+	min-width: min(628px, 100%);
 }
 
 .aiUses-headings p {
@@ -82,7 +82,7 @@
 }
 
 .aiUses-card svg path {
-	color: #a39e98;
+	fill: #a39e98;
 }
 
 .aiUses-card p {

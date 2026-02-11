@@ -207,7 +207,7 @@ footer {
 	margin-inline-start: 0.2em;
 }
 
-#explore-more {
+.explore-more {
 	display: flex;
     justify-content: flex-end;
     height: 100%;

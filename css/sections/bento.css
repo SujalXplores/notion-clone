@@ -1,5 +1,5 @@
 .fall-lightGrayBg {
-	padding: 0 var(--space-xxl);
+	padding: 0 round(up, 7.22223vw, 0.2rem);
 	background-color: var(--default-background);
 }
 
@@ -875,7 +875,6 @@
 		border: solid black;
 		border-width: 1vw 1vw 0;
 		overflow: hidden;
-		box-shadow: var(--bento-shadow-level);
 	}
 	.custom-agents-first-picture img {
 		width: auto;
@@ -1043,5 +1042,12 @@
 	}
 	.bentoCarousel-buttons button:first-child {
 		background-color: #0000004d;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.intro-3{
+		font-size: var(--font-size-md-heading);
+		line-height: 48px;
 	}
 }
