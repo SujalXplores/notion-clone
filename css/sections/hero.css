@@ -4,7 +4,7 @@
 }
 
 .fall-hero-animation {
-	padding: 0 round(up, 7.22223vw, 0.2rem);
+	padding: 0 var(--global-space-x);
 }
 
 .center-container {
@@ -449,6 +449,13 @@
 		max-width: 100%;
 	}
 }
+
+@media screen and (max-width: 1080px) {
+	.nvidiaContainer {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 1280px) {
 	.volvoContainer,
 	.perplexityContainer {

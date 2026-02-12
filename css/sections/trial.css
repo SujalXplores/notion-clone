@@ -1,6 +1,6 @@
 .free-try-section {
 	background-color: var(--default-background);
-	padding: var(--space-xxl);
+	padding: var(--space-xxl) var(--global-space-x);
 	position: relative;
 	margin: 0 auto;
 }
@@ -38,6 +38,7 @@
 	overflow: hidden;
 	background-color: var(--paper-background);
 	border-radius: var(--radius-xl);
+	height: fit-content;
 }
 
 .design-system-content {
@@ -179,7 +180,6 @@
 
 .free-mail-calendar-container {
 	display: grid;
-	grid-template-rows: repeat(2, 1fr);
 	gap: var(--space-lg);
 }
 
@@ -283,7 +283,7 @@
 
 @media screen and (max-width: 400px) {
 	.free-try-section {
-		padding: 2rem round(up, 7.22223vw, 0.2rem);
+		padding: var(--space-xl) var(--global-space-x);
 	}
 	.free-try-headings h2 {
 		font-size: var(--font-size-md);
@@ -334,5 +334,60 @@
 	}
 	.free-mail-calendar-container {
 		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 1204px) {
+	.free-try-headings h2 {
+		font-size: var(--font-size-md-heading);
+		line-height: 48px;
+	}
+	.design-system-heading p,
+	.notion-mail-calendar-heading p {
+		font-size: var(--font-size-sm);
+		line-height: 20px;
+	}
+	.notion-mail-calendar-content {
+		padding-right: 0;
+	}
+	.design-system-heading p {
+		min-height: auto;
+	}
+	.free-try-container,
+	.free-mail-calendar-container {
+		gap: 28px;
+	}
+}
+
+@media screen and (max-width: 988px) {
+	.free-try-headings h2 {
+		font-size: var(--font-size-md);
+		line-height: 40px;
+		letter-spacing: 0;
+	}
+	.design-system-heading h3 {
+		font-size: var(--font-size-bento-title);
+		min-height: auto;
+		line-height: 28px;
+	}
+	.design-system-heading p {
+		font-size: var(--font-size-sm);
+		margin-top: var(--space-xs);
+	}
+	.notion-mail-calendar-heading h3 {
+		font-size: var(--font-size-bento-title);
+		min-height: auto;
+		line-height: 28px;
+	}
+	.notion-mail-calendar-heading p {
+		font-size: var(--font-size-sm);
+		margin-top: var(--space-xs);
+	}
+	.notion-mail-calendar-section {
+		grid-template-columns: 5fr 3fr;
+	}
+	.notion-mail-calendar-heading p {
+		line-height: 20px;
+		min-height: auto;
 	}
 }

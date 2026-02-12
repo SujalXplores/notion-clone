@@ -40,8 +40,10 @@
 	--space-xl: 2rem;
 	--space-lg: 1.5rem;
 	--space-md: 1rem;
+	--space-xmd: 0.75rem;
 	--space-sm: 0.5rem;
 	--space-xs: 0.25rem;
+	--global-space-x: round(up, 7.22223vw, 0.2rem);
 
 	--radius-xl: 16px;
 	--radius-lg: 12px;

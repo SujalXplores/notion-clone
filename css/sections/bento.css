@@ -1,5 +1,5 @@
 .fall-lightGrayBg {
-	padding: 0 round(up, 7.22223vw, 0.2rem);
+	padding: 0 var(--global-space-x);
 	background-color: var(--default-background);
 }
 
@@ -219,7 +219,7 @@
 
 .noseyduckclip {
 	width: 100%;
-	height: 140px;
+	height: auto;
 	object-fit: cover;
 	opacity: 1;
 	aspect-ratio: 256/256;
@@ -316,7 +316,7 @@
 	padding: 24px;
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-xs);
+	gap: var(--space-sm);
 }
 
 .bento_bentoImagesWrapper {
@@ -519,7 +519,7 @@
 	filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
 }
 
-.enterpriseSearchsVideo {
+.enterpriseSearchVideo {
 	aspect-ratio: 1584 / 1080;
 	width: 100%;
 	height: 100%;
@@ -799,13 +799,13 @@
 }
 
 .forbesQuote p {
-	font-size: var(--font-size-sm-heading);
+	font-size: var(--font-size-md);
 	font-family: var(--lyon-font-family);
-
 	font-weight: 400;
-	line-height: 32px;
+	line-height: 40px;
 	text-indent: -0.5em;
 	letter-spacing: 0;
+	margin-bottom: 1rem;
 }
 
 .forbesQuote p::before {
@@ -817,9 +817,148 @@
 	font-family: var(--lyon-font-family);
 }
 
+@media screen and (max-width: 1204px) {
+	.bentoCarousel-content {
+		display: none;
+	}
+	.sm-bentoCarousel-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		padding: 24px;
+	}
+
+	.bentoCarousel-content-buttons {
+		padding: 0;
+	}
+	.bentoCarousel-buttons {
+		margin-top: 16px;
+		display: flex;
+		gap: 8px;
+	}
+	.bentoCarousel-buttons button {
+		height: 10px;
+		width: 10px;
+		padding: 0;
+		border: none;
+		border-radius: 100%;
+		background-color: var(--default-background);
+	}
+	.bentoCarousel-buttons button:first-child {
+		background-color: #0000004d;
+	}
+}
+
+@media screen and (max-width: 839px) {
+	.forbesQuote p {
+		font-size: var(--font-size-sm-heading);
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.intro-3 {
+		font-size: var(--font-size-md-heading);
+		line-height: 48px;
+	}
+	.bentoCarousel-content-buttons p {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1079px) {
+	.bento-article-container {
+		gap: 1rem;
+	}
+	.arrow-right {
+		width: 24px;
+		height: 24px;
+	}
+	.notion-3-container {
+		gap: 1rem;
+	}
+	.enterprise-search-header h4,
+	.ai-meetings-header h4,
+	.flexible-workflows-header h4 {
+		margin-bottom: var(--space-xs);
+	}
+}
+
+@media screen and (max-width: 988px) {
+	.intro-3 {
+		font-size: var(--font-size-md);
+		line-height: 40px;
+	}
+	.custom-agent-header {
+		gap: var(--space-xs);
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.custom-agents-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	.bentoCarousel-heading {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.bentoCarousel-heading a {
+		display: flex;
+	}
+	.custom-agents-first-picture img,
+	.custom-agents-second-picture img {
+		transform: none;
+	}
+	.bento_bentoImagesWrapper {
+		max-height: 424px;
+	}
+	.custom-agents-first-picture {
+		width: 50%;
+		margin-inline-end: 0;
+		margin-inline-start: 24px;
+		transform-origin: top left;
+		max-width: 60%;
+		border-top-left-radius: 4vw;
+		border-top-right-radius: 4vw;
+		border: solid black;
+		border-width: 1vw 1vw 0;
+		overflow: hidden;
+	}
+	.custom-agents-first-picture img {
+		width: auto;
+		transform: none;
+	}
+	.custom-agents-second-picture {
+		width: 50%;
+		position: absolute;
+		inset-inline-end: 24px;
+		top: 24px;
+		bottom: 0;
+		margin: 0;
+		border-inline-start: 1px solid var(--color-border);
+		border-top-left-radius: 4vw;
+		border-top-right-radius: 4vw;
+		border: solid black;
+		border-width: 1vw 1vw 0;
+	}
+	.custom-agents-second-picture img {
+		transform: none;
+	}
+}
+@media screen and (max-width: 903px) {
+	.bentoCarousel-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	.bentoCarousel-first,
+	.sm-bentoCarousel-content {
+		padding: var(--lh-base);
+	}
+}
+
 @media screen and (max-width: 400px) {
 	.fall-lightGrayBg {
-		padding: 2rem round(up, 7.22223vw, 0.2rem);
+		padding: 2rem var(--global-space-x);
 	}
 	.bentoContainer {
 		padding: 0;
@@ -1001,9 +1140,6 @@
 	.sm-br-radius {
 		border-radius: 8px;
 	}
-	.notion-3-container {
-		gap: 1rem;
-	}
 	.noseyhat {
 		inset-block-end: -4vw !important;
 	}
@@ -1012,42 +1148,5 @@
 	}
 	.ai-meetings-header h4 {
 		margin-bottom: 4px;
-	}
-}
-
-@media screen and (max-width: 1204px) {
-	.bentoCarousel-content {
-		display: none;
-	}
-	.sm-bentoCarousel-content {
-		display: block;
-		padding: 20px;
-	}
-
-	.bentoCarousel-content-buttons {
-		padding: 0;
-	}
-	.bentoCarousel-buttons {
-		margin-top: 16px;
-		display: flex;
-		gap: 8px;
-	}
-	.bentoCarousel-buttons button {
-		height: 10px;
-		width: 10px;
-		padding: 0;
-		border: none;
-		border-radius: 100%;
-		background-color: var(--default-background);
-	}
-	.bentoCarousel-buttons button:first-child {
-		background-color: #0000004d;
-	}
-}
-
-@media screen and (max-width: 1280px) {
-	.intro-3{
-		font-size: var(--font-size-md-heading);
-		line-height: 48px;
 	}
 }

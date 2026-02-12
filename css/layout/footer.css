@@ -209,23 +209,32 @@ footer {
 
 .explore-more {
 	display: flex;
-    justify-content: flex-end;
-    height: 100%;
-    align-items: flex-end;
+	justify-content: flex-end;
+	height: 100%;
+	align-items: flex-end;
 }
 
 @media screen and (max-width: 400px) {
 	footer {
 		padding: 40px 16px;
-		display: flex;
-		flex-direction: column;
-		gap: 36px;
 	}
 	.notion-license-container {
 		width: 100%;
 	}
 	.notion-links-container {
 		width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	footer {
+		display: flex;
+		flex-direction: column;
+		gap: 36px;
+	}
+	.notion-links-container{
+		grid-template-columns: repeat(2, minmax(10px, 1fr));
+		width: 100%;
 	}
 }

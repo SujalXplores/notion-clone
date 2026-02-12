@@ -1,6 +1,6 @@
 .analytics-section {
 	background-color: var(--paper-background);
-	padding: var(--space-xxl);
+	padding: var(--space-xxl) var(--global-space-x);
 	position: relative;
 	margin: 0 auto;
 }
@@ -93,8 +93,8 @@
 	padding: var(--space-xs) 0;
 }
 
-.checkbox-container input{
-	margin-top: .25rem;
+.checkbox-container input {
+	margin-top: 0.25rem;
 }
 
 .checkbox-container label {
@@ -191,7 +191,7 @@
 }
 @media screen and (max-width: 400px) {
 	.analytics-section {
-		padding: 2rem round(up, 7.22223vw, 0.2rem);
+		padding: var(--space-xl) var(--global-space-x);
 	}
 	.analytics-header-container {
 		display: flex;
@@ -232,5 +232,65 @@
 	}
 	.annual-savings-section h2 {
 		font-size: var(--font-size-sm-heading);
+	}
+}
+
+@media screen and (max-width: 1204px) {
+	.analytics-headings {
+		min-width: 37%;
+	}
+	.analytics-headings h2 {
+		font-size: var(--font-size-md-heading);
+		min-width: 100%;
+		max-inline-size: 24ch;
+		line-height: 48px;
+		letter-spacing: -0.09375rem;
+	}
+	.analytics-headings p {
+		max-inline-size: 56ch;
+	}
+	.analytics-header-container {
+		display: flex;
+		flex-flow: row;
+		align-items: end;
+	}
+}
+
+@media screen and (max-width: 988px) {
+	.analytics-headings h2{
+		font-size: var(--font-size-md);
+		line-height: 40px;
+		letter-spacing: 0;
+	}
+	.startup-pricing-calculator{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-lg);
+	}
+	.checkbox-section{
+		grid-template-columns: auto;
+		gap: 0;
+		padding: var(--space-xs);
+	}
+	.calculation-section{
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+	.team-size-section{
+		margin-bottom: auto;
+	}
+	.monthly-savings-section h2, .annual-savings-section h2{
+		line-height: 48px;
+	}
+	.analytics-headings p{
+		margin-top: 1rem;
+	}
+	.checkbox-container label{
+		line-height: 24px;
+		gap: var(--space-sm);
+	}
+	.monthly-savings-section, .annual-savings-section{
+		gap: 6px;
 	}
 }

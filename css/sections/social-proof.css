@@ -1,6 +1,6 @@
 .social-proof-section {
 	background-color: var(--default-background);
-	padding: var(--space-xxl);
+	padding: var(--space-xxl) var(--global-space-x);
 	position: relative;
 	margin: 0 auto;
 }
@@ -358,7 +358,7 @@
 		gap: var(--space-md);
 	}
 	.social-proof-section {
-		padding: 2rem round(up, 7.22223vw, 0.2rem);
+		padding: var(--space-xl) var(--global-space-x);
 	}
 	.social-proof-headings h2 {
 		font-size: var(--font-size-md);
@@ -391,5 +391,32 @@
 	}
 	.social-proof-content {
 		padding: 24px;
+	}
+}
+
+@media screen and (max-width: 1204px) {
+	.openAi-quote-block {
+		gap: var(--space-xmd);
+	}
+	.social-proof-headings h2 {
+		font-size: var(--font-size-md-heading);
+		line-height: 48px;
+	}
+	.openAi-quote-block p {
+		line-height: 40px;
+	}
+	.open-ai-image {
+		align-items: center;
+	}
+	.marquee-container{
+		margin-top: 8px;
+	}
+}
+
+@media screen and (max-width: 988px) {
+	.social-proof-headings h2 {
+		font-size: var(--font-size-md);
+		line-height: 40px;
+		letter-spacing: 0;
 	}
 }
