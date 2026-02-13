@@ -193,10 +193,6 @@
 	.analytics-section {
 		padding: var(--space-xl) var(--global-space-x);
 	}
-	.analytics-header-container {
-		display: flex;
-		flex-direction: column-reverse;
-	}
 	.analytics-headings h2 {
 		font-size: var(--font-size-md);
 		text-wrap: balance;
@@ -227,12 +223,6 @@
 		padding: 6px;
 		line-height: normal;
 	}
-	.monthly-savings-section h2 {
-		font-size: var(--font-size-sm-heading);
-	}
-	.annual-savings-section h2 {
-		font-size: var(--font-size-sm-heading);
-	}
 }
 
 @media screen and (max-width: 1204px) {
@@ -257,40 +247,101 @@
 }
 
 @media screen and (max-width: 988px) {
-	.analytics-headings h2{
+	.analytics-headings h2 {
 		font-size: var(--font-size-md);
 		line-height: 40px;
 		letter-spacing: 0;
 	}
-	.startup-pricing-calculator{
+	.startup-pricing-calculator {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--space-lg);
 	}
-	.checkbox-section{
+	.checkbox-section {
 		grid-template-columns: auto;
 		gap: 0;
 		padding: var(--space-xs);
 	}
-	.calculation-section{
+	.calculation-section {
 		display: flex;
 		flex-direction: column;
 		margin-top: 0;
 	}
-	.team-size-section{
+	.team-size-section {
 		margin-bottom: auto;
 	}
-	.monthly-savings-section h2, .annual-savings-section h2{
+	.monthly-savings-section h2,
+	.annual-savings-section h2 {
 		line-height: 48px;
 	}
-	.analytics-headings p{
+	.analytics-headings p {
 		margin-top: 1rem;
 	}
-	.checkbox-container label{
+	.checkbox-container label {
 		line-height: 24px;
 		gap: var(--space-sm);
 	}
-	.monthly-savings-section, .annual-savings-section{
+	.monthly-savings-section,
+	.annual-savings-section {
 		gap: 6px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.analytics-header-container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: start;
+	}
+	.analytics-headings h2 {
+		font-size: var(--font-size-md);
+		text-wrap: balance;
+		min-width: 100%;
+		line-height: 40px;
+	}
+	.analytics-header-img-container {
+		width: 60%;
+		max-width: 600px;
+	}
+	.analytics-header-img-container img {
+		width: 100%;
+		height: auto;
+	}
+	.monthly-savings-section h2,
+	.annual-savings-section h2 {
+		font-size: var(--font-size-md);
+		line-height: 40px;
+	}
+	.team-size-section input {
+		font-size: var(--font-size-md);
+		padding: 6px;
+		line-height: 40px;
+	}
+	.calculation-section {
+		gap: var(--space-md);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.analytics-header-img-container {
+		width: 90%;
+	}
+	.analytics-section {
+		padding: var(--space-xl) var(--global-space-x);
+	}
+	.startup-pricing-calculator{
+		grid-template-columns: repeat(1, 1fr);
+		gap: var(--space-md);
+	}
+	.monthly-savings-section h2, .annual-savings-section h2 {
+		font-size: var(--font-size-sm-heading);
+	}
+	.team-size-section input {
+		font-size: var(--font-size-sm-heading);
+		line-height: 32px;
+	}
+	.monthly-savings-section h2,
+	.annual-savings-section h2 {
+		line-height: 32px;
 	}
 }

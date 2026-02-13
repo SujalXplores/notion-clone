@@ -391,3 +391,37 @@
 		min-height: auto;
 	}
 }
+
+@media screen and (max-width: 940px) {
+	.free-try-container {
+		grid-template-columns: auto;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.design-system-content svg,
+	.notion-mail-calendar-content svg {
+		width: 40px;
+		height: auto;
+	}
+	.design-system-heading p,
+	.notion-mail-calendar-heading p {
+		margin-top: 0;
+	}
+	.design-system-image-container {
+		margin-top: var(--radius-xl);
+	}
+	.notion-mail-calendar-image-container {
+		display: none;
+	}
+	.free-try-container,
+	.free-mail-calendar-container {
+		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.free-try-section {
+		padding: var(--space-xl) var(--global-space-x);
+	}
+}

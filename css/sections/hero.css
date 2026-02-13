@@ -300,89 +300,11 @@
 	height: auto;
 }
 
-@media screen and (max-width: 400px) {
-	.fall-hero-animation {
-		padding: 0 var(--space-xl) var(--space-xl);
-		overflow-x: clip;
-	}
-	.center-container {
-		margin: 16px auto 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		max-width: 100%;
-		width: 100%;
-		gap: var(--space-md);
-	}
-	.hero-animation-container {
-		margin: 0;
-		margin-top: -8px;
-		width: 120vw;
-		position: relative;
-		z-index: 1;
-		pointer-events: none;
-	}
-	.hero-am-text-container {
-		min-width: 100%;
-		margin-top: 0;
-	}
-	.hero-am-heading {
-		font-size: var(--font-size-md-heading);
-		font-weight: 700;
-		margin: 0;
-		padding: 0;
-		text-wrap: balance;
-		text-align: center;
-		cursor: default;
-		line-height: var(--lh-md);
-		max-width: 100%;
-	}
-	.hero-am-subheading {
-		font-size: var(--font-size-base);
-		word-spacing: normal;
-		line-height: var(--lh-xs);
-	}
-
-	.hero-am-buttons {
-		gap: var(--space-sm);
-	}
-
-	.hero-am-buttons button {
-		width: 100%;
-	}
-	.logoWallStickyWrapper {
-		position: relative;
-		padding: 0;
-		margin: 3.6rem auto 0 auto;
-	}
-	.logoWallStickyWrapperContainer {
-		flex-direction: column;
-		justify-content: center;
-		padding-block-end: 1.5rem;
-	}
-	.logoWallText {
-		min-width: fit-content;
-	}
-	.logoWallImageContainer {
-		display: flex;
-		width: 100%;
-		align-items: center;
-		gap: 16px 32px;
-		justify-content: center;
-		flex-wrap: wrap;
-		max-width: 360px;
-		min-height: 57.7px;
-	}
-	.normalImage {
-		display: none;
-	}
-}
-
 @media screen and (min-width: 840px) {
 	.logoWallStickyWrapper::before {
 		position: absolute;
 		content: "";
-		inline-size: 100vw;
+		inline-size: 100dvw;
 		inset-block: 0;
 		inset-inline-start: 50%;
 		animation: hover-border linear both;
@@ -395,16 +317,13 @@
 
 	.logoWallStickyWrapper::after {
 		--outdent: 36px;
-		border-block-start: 1px solid var(--color-border); /* Initial state */
+		border-block-start: 1px solid var(--color-border);
 		content: "";
 		inset: 0 calc(var(--outdent) * -1) auto;
 		position: absolute;
 		z-index: 1;
-
-		/* Animation logic */
 		animation: border-fade linear both;
 		animation-timeline: view();
-		/* This range triggers the animation as the element enters the 'sticky' zone at the bottom */
 		animation-range: entry 0% entry 100%;
 
 		mask-image: linear-gradient(
@@ -438,9 +357,44 @@
 @media screen and (max-width: 840px) {
 	.hero-am-heading {
 		font-size: var(--font-size-lg-heading);
+		line-height: 56px;
+	}
+	.logoWallText {
+		min-width: auto;
 	}
 	.product-image-container {
 		display: none;
+	}
+	.logoWallStickyWrapperContainer {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logoWallImageContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 21.83px;
+	}
+	.fall-hero-animation {
+		padding-bottom: var(--space-xl);
+	}
+	.noseyhat {
+		inset-block-end: -33.5px;
+	}
+	.bento-article-container article {
+		border-radius: var(--radius-md);
+	}
+	.bentoCarousel-heading p,
+	.enterprise-search-heading p,
+	.ai-meetings-heading p,
+	.flexible-workflows-heading p {
+		font-size: var(--font-size-subheading);
+	}
+	.forbesQuote p {
+		line-height: 32px;
+	}
+	.forbesQuote figcaption {
+		min-height: 26px;
 	}
 }
 
@@ -456,6 +410,68 @@
 	}
 }
 
+@media screen and (width < 600px) {
+	.hero-animation-container {
+		margin: 0;
+		margin-top: -5px;
+		width: 120vw;
+		position: relative;
+		z-index: 1;
+		pointer-events: none;
+	}
+	.fall-hero-animation {
+		padding: 0 var(--space-xl) var(--space-xl);
+		overflow-x: clip;
+	}
+	.center-container {
+		margin: 16px auto 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 100%;
+		width: 100%;
+		gap: var(--space-md);
+	}
+	.hero-am-text-container {
+		min-width: 100%;
+		margin-top: 0;
+	}
+	.hero-am-heading {
+		font-size: var(--font-size-md-heading);
+		font-weight: 700;
+		margin: 0;
+		padding: 0;
+		text-wrap: balance;
+		text-align: center;
+		cursor: default;
+		line-height: var(--lh-md);
+		max-width: 100%;
+	}
+	.hero-am-subheading {
+		font-size: var(--font-size-base);
+		word-spacing: normal;
+		line-height: var(--lh-xs);
+	}
+	.logoWallStickyWrapper {
+		position: relative;
+		padding: 0;
+		margin: 3.6rem auto 0 auto;
+	}
+	.logoWallImageContainer {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		gap: 16px 32px;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 360px;
+		min-height: 57.7px;
+		padding-bottom: 1.5rem;
+	}
+	.bentoContainer{
+		padding: var(--space-xl) 0;
+	}
+}
 @media screen and (max-width: 1280px) {
 	.volvoContainer,
 	.perplexityContainer {
@@ -463,5 +479,35 @@
 	}
 	.fall-hero-animation {
 		margin-top: var(--space-md);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.hero-am-buttons {
+		gap: var(--space-sm);
+	}
+	.hero-am-buttons button {
+		width: 100%;
+	}
+	.logoWallStickyWrapperContainer {
+		flex-direction: column;
+		justify-content: center;
+		padding-block-end: 1.5rem;
+	}
+	.logoWallText {
+		min-width: fit-content;
+	}
+	.logoWallImageContainer {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		gap: 16px 32px;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 360px;
+		min-height: 57.7px;
+	}
+	.normalImage {
+		display: none;
 	}
 }

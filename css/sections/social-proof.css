@@ -355,7 +355,6 @@
 	.social-proof-container {
 		display: flex;
 		flex-direction: column;
-		gap: var(--space-md);
 	}
 	.social-proof-section {
 		padding: var(--space-xl) var(--global-space-x);
@@ -376,9 +375,6 @@
 	}
 	.openAi-quote-block p {
 		font-size: var(--font-size-bento-title);
-	}
-	.small-cards {
-		display: none;
 	}
 	.marquee {
 		margin-inline: calc(-1 * 1.8rem);
@@ -408,7 +404,7 @@
 	.open-ai-image {
 		align-items: center;
 	}
-	.marquee-container{
+	.marquee-container {
 		margin-top: 8px;
 	}
 }
@@ -418,5 +414,38 @@
 		font-size: var(--font-size-md);
 		line-height: 40px;
 		letter-spacing: 0;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.openAi-quote-block img {
+		height: 24px;
+	}
+	.social-proof-openAi {
+		grid-template-columns: 1fr;
+		gap: var(--space-md);
+	}
+	.openAi-quote-block p {
+		font-size: var(--font-size-bento-title);
+		text-wrap: auto;
+		line-height: 28px;
+	}
+	.small-cards {
+		display: none;
+	}
+	.social-proof-card {
+		grid-column: span 3;
+	}
+	.social-proof-container {
+		gap: var(--space-md);
+	}
+	.social-proof-card {
+		gap: 8px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.social-proof-section {
+		padding: var(--space-xl) var(--global-space-x);
 	}
 }

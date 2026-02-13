@@ -326,8 +326,6 @@
 	max-height: 400px;
 	overflow: hidden;
 	grid-template-columns: 50% 50%;
-	align-self: stretch;
-	justify-self: stretch;
 	z-index: 2;
 	width: 100%;
 	position: relative;
@@ -693,8 +691,6 @@
 	flex-direction: row;
 	max-height: 400px;
 	grid-column: 2;
-	align-self: stretch;
-	justify-self: stretch;
 	display: flex;
 	z-index: 2;
 	width: 100%;
@@ -853,6 +849,9 @@
 	.forbesQuote p {
 		font-size: var(--font-size-sm-heading);
 	}
+	.slideAVideo {
+		border-top-left-radius: 0.375rem;
+	}
 }
 
 @media screen and (max-width: 1279px) {
@@ -872,6 +871,7 @@
 	.arrow-right {
 		width: 24px;
 		height: 24px;
+		flex-shrink: 0;
 	}
 	.notion-3-container {
 		gap: 1rem;
@@ -894,25 +894,23 @@
 }
 
 @media screen and (max-width: 960px) {
-	.custom-agents-container {
+	.custom-agents-container, .flexible-workflows-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;
 	}
-	.bentoCarousel-heading {
+	.bentoCarousel-heading, .flexible-workflows-heading {
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: end;
 	}
-	.bentoCarousel-heading a {
+	.bentoCarousel-heading a, .flexible-workflows-heading a {
 		display: flex;
 	}
-	.custom-agents-first-picture img,
-	.custom-agents-second-picture img {
-		transform: none;
-	}
-	.bento_bentoImagesWrapper {
+	.bento_bentoImagesWrapper, .flexible-workflows_ImagesWrapper {
 		max-height: 424px;
+		display: flex;
 	}
-	.custom-agents-first-picture {
+	.custom-agents-first-picture, .flexible-workflows-first-picture {
 		width: 50%;
 		margin-inline-end: 0;
 		margin-inline-start: 24px;
@@ -924,11 +922,11 @@
 		border-width: 1vw 1vw 0;
 		overflow: hidden;
 	}
-	.custom-agents-first-picture img {
-		width: auto;
+	.custom-agents-first-picture img, .flexible-workflows-first-picture img {
+		max-height: none;
 		transform: none;
 	}
-	.custom-agents-second-picture {
+	.custom-agents-second-picture, .flexible-workflows-second-picture {
 		width: 50%;
 		position: absolute;
 		inset-inline-end: 24px;
@@ -940,10 +938,37 @@
 		border-top-right-radius: 4vw;
 		border: solid black;
 		border-width: 1vw 1vw 0;
+		z-index: 2;
 	}
-	.custom-agents-second-picture img {
+	.custom-agents-second-picture img, .flexible-workflows-second-picture img {
 		transform: none;
+		border-top-left-radius: 4vw;
+		border-top-right-radius: 4vw;
 	}
+	.enterprise-search-container,
+	.ai-meetings-container {
+		grid-column: span 2;
+	}
+	.enterprise-search-picture img,
+	.ai-meetings-picture img {
+		max-height: 400px;
+		object-position: top left;
+		object-fit: cover;
+	}
+	.ai-meetings-picture {
+		border: 1px solid #000;
+		max-width: 60%;
+		margin: 24px auto 0;
+		border-top-left-radius: 4vw;
+		border-top-right-radius: 4vw;
+		border-width: 1vw 1vw 0;
+	}
+	.flexible-workflows-header {
+        grid-column: 1; 
+    }
+    .flexible-workflows_ImagesWrapper {
+        grid-column: 1;
+    }
 }
 @media screen and (max-width: 903px) {
 	.bentoCarousel-container {
@@ -953,6 +978,16 @@
 	.bentoCarousel-first,
 	.sm-bentoCarousel-content {
 		padding: var(--lh-base);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bento_bentoImagesWrapper , .flexible-workflows_ImagesWrapper{
+		max-height: 309px;
+		display: flex;
+	}
+	.enterprise-search-picture img, .ai-meetings-picture img {
+		max-height: 285px;
 	}
 }
 
@@ -987,21 +1022,11 @@
 		align-items: flex-end;
 		justify-content: space-between;
 	}
-	.arrow-right {
-		width: 24px;
-		height: 24px;
-		flex-shrink: 0;
-	}
 	.bentoCarousel-first {
 		padding: 1.25rem;
 	}
 	.custom-agents-container {
 		grid-template-columns: repeat(1, 1fr);
-	}
-	.bento_bentoImagesWrapper {
-		max-height: 309px;
-
-		display: flex;
 	}
 	.custom-agents-first-picture {
 		width: 50%;

@@ -85,10 +85,6 @@
 	display: none;
 }
 
-/* .hamburger-menu:active {
-	display: none;
-} */
-
 @keyframes header-border {
 	to {
 		border-bottom-color: var(--border-color);
@@ -126,5 +122,11 @@
 	}
 	.hamburger-menu {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.login-btn{
+		display: none;
 	}
 }
