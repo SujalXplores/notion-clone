@@ -29,7 +29,6 @@
 	display: block;
 	margin: auto;
 	width: 100%;
-	height: auto;
 }
 
 .hero-animation img {
@@ -300,6 +299,10 @@
 	height: auto;
 }
 
+.logoWallStickyWrapper::before {
+    inline-size: 100%; 
+}
+
 @media screen and (min-width: 840px) {
 	.logoWallStickyWrapper::before {
 		position: absolute;
@@ -354,7 +357,16 @@
 	}
 }
 
+@media screen and (min-width: 1561px) {
+    .logoWallStickyWrapper::before {
+        inline-size: 100%;
+    }
+}
+
 @media screen and (max-width: 840px) {
+	.trusted-teams {
+		position: relative;
+	}
 	.hero-am-heading {
 		font-size: var(--font-size-lg-heading);
 		line-height: 56px;
@@ -468,7 +480,7 @@
 		min-height: 57.7px;
 		padding-bottom: 1.5rem;
 	}
-	.bentoContainer{
+	.bentoContainer {
 		padding: var(--space-xl) 0;
 	}
 }
@@ -483,6 +495,12 @@
 }
 
 @media screen and (max-width: 400px) {
+	.fall-hero-animation {
+		padding: 0 var(--space-xl) 0;
+	}
+	.bentoContainer {
+		padding: 0;
+	}
 	.hero-am-buttons {
 		gap: var(--space-sm);
 	}

@@ -214,19 +214,6 @@ footer {
 	align-items: flex-end;
 }
 
-@media screen and (max-width: 400px) {
-	footer {
-		padding: 40px 16px;
-	}
-	.notion-license-container {
-		width: 100%;
-	}
-	.notion-links-container {
-		width: 100%;
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
 @media screen and (max-width: 1080px) {
 	footer {
 		display: flex;
@@ -250,5 +237,18 @@ footer {
 	}
 	.notion-license-container {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	footer {
+		padding: 40px 16px;
+	}
+	.notion-license-container {
+		width: 100%;
+	}
+	.notion-links-container {
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }

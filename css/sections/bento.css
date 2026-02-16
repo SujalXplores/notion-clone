@@ -4,7 +4,7 @@
 }
 
 .bentoContainer {
-	margin: 0rem auto;
+	margin: 0 auto;
 	max-width: var(--max-content-width);
 	padding: var(--space-xxl) 0;
 	position: relative;
@@ -297,7 +297,6 @@
 	min-height: 280px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	overflow: hidden;
 	background-color: var(--paper-background);
 	position: relative;
 	justify-content: space-between;
@@ -313,7 +312,6 @@
 .custom-agent-header {
 	grid-column: 1;
 	padding: var(--space-lg);
-	padding: 24px;
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-sm);
