@@ -1,427 +1,427 @@
 .free-try-section {
-	background-color: var(--default-background);
-	padding: var(--space-xxl) var(--global-space-x);
-	position: relative;
-	margin: 0 auto;
+  background-color: var(--default-background);
+  padding: var(--space-xxl) var(--global-space-x);
+  position: relative;
+  margin: 0 auto;
 }
 
 .free-try-header-container {
-	max-width: var(--max-content-width);
-	margin: 0 auto var(--space-xl) auto;
+  max-width: var(--max-content-width);
+  margin: 0 auto var(--space-xl) auto;
 }
 
 .free-try-headings {
-	display: flex;
-	flex-direction: column;
-	gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .free-try-headings h2 {
-	font-size: var(--font-size-lg-heading);
-	line-height: var(--lh-lg);
-	text-wrap: balance;
-	min-width: min(628px, 100%);
-	cursor: default;
+  font-size: var(--font-size-lg-heading);
+  line-height: var(--lh-lg);
+  text-wrap: balance;
+  min-width: min(628px, 100%);
+  cursor: default;
 }
 
 .free-try-container {
-	max-width: var(--max-content-width);
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	margin: 0 auto;
-	gap: var(--space-lg);
+  max-width: var(--max-content-width);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: var(--space-lg);
 }
 
 .design-system-container {
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	background-color: var(--paper-background);
-	border-radius: var(--radius-xl);
-	height: fit-content;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--paper-background);
+  border-radius: var(--radius-xl);
+  height: fit-content;
 }
 
 .design-system-content {
-	padding: var(--space-lg);
-	margin: 0 auto;
-	width: 100%;
-	position: relative;
-	flex: 1 1;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 16px;
-	overflow: hidden;
+  padding: var(--space-lg);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  overflow: hidden;
 }
 
 .design-system-content svg {
-	width: 48px;
-	height: auto;
+  width: 48px;
+  height: auto;
 }
 
 .design-system-heading h3 {
-	font-size: var(--font-size-sm-heading);
-	font-weight: 700;
+  font-size: var(--font-size-sm-heading);
+  font-weight: 700;
 
-	min-height: 32px;
-	display: flex;
-	align-items: center;
-	cursor: default;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
 
 .design-system-heading p {
-	font-size: var(--font-size-base);
-	font-weight: 500;
-	margin: 4px 0 0;
-	min-height: 24px;
-	display: flex;
-	align-items: center;
-	cursor: default;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  margin: 4px 0 0;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
 
 .windows-download {
-	background-color: #191918;
-	color: var(--color-white);
-	font-size: var(--font-size-base);
-	font-weight: 500;
-	min-height: 2.25rem;
-	padding: var(--space-xs) 0.875rem;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	word-break: break-word;
-	white-space: nowrap;
-	border-radius: var(--space-sm);
-	border: 1px solid #0000;
-	height: auto;
-	text-decoration: none;
+  background-color: #191918;
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  min-height: 2.25rem;
+  padding: var(--space-xs) 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  white-space: nowrap;
+  border-radius: var(--space-sm);
+  border: 1px solid #0000;
+  height: auto;
+  text-decoration: none;
 }
 
 .windows-download svg {
-	fill: currentColor;
+  fill: currentColor;
 }
 
 .windows-download path {
-	color: var(--color-white);
+  color: var(--color-white);
 }
 
 .ios-download {
-	background-color: var(--btn-primary-bg);
-	color: var(--color-white);
-	font-size: var(--font-size-base);
-	font-weight: 500;
-	min-height: 2.25rem;
-	padding: var(--space-xs) 0.875rem;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	word-break: break-word;
-	white-space: nowrap;
-	border-radius: var(--space-sm);
-	border: 1px solid #0000;
-	height: auto;
-	text-decoration: none;
+  background-color: var(--btn-primary-bg);
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  min-height: 2.25rem;
+  padding: var(--space-xs) 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  white-space: nowrap;
+  border-radius: var(--space-sm);
+  border: 1px solid #0000;
+  height: auto;
+  text-decoration: none;
 }
 
 .ios-download svg {
-	fill: currentColor;
+  fill: currentColor;
 }
 
 .ios-download path {
-	color: var(--color-white);
+  color: var(--color-white);
 }
 
 .microsoft-store-download {
-	background-color: #191918;
-	color: var(--color-white);
-	min-height: 2.25rem;
-	padding: var(--space-xs) 0.875rem;
-	display: block;
-	word-break: break-word;
-	white-space: nowrap;
-	border-radius: var(--space-sm);
-	border: 1px solid #0000;
-	height: auto;
-	text-decoration: none;
-	margin-top: 10px;
-	width: 100%;
-	max-height: 55px;
+  background-color: #191918;
+  color: var(--color-white);
+  min-height: 2.25rem;
+  padding: var(--space-xs) 0.875rem;
+  display: block;
+  word-break: break-word;
+  white-space: nowrap;
+  border-radius: var(--space-sm);
+  border: 1px solid #0000;
+  height: auto;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 100%;
+  max-height: 55px;
 }
 
 .design-system-image-container {
-	margin-top: 24px;
-	width: calc(100% - 24px);
-	max-width: 100%;
-	display: flex;
-	position: relative;
-	align-self: flex-end;
-	left: 0;
-	right: 0;
-	border-start-start-radius: var(--radius-lg);
-	overflow: hidden;
-	box-shadow:
-		0 1px 3px 0 #00000003,
-		0 3px 7px 0 #00000005,
-		0 7px 15px 0 #00000005,
-		0 14px 28px 0 #0000000a,
-		0 23px 52px 0 var(--bg-hover-subtle);
+  margin-top: 24px;
+  width: calc(100% - 24px);
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  left: 0;
+  right: 0;
+  border-start-start-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow:
+    0 1px 3px 0 #00000003,
+    0 3px 7px 0 #00000005,
+    0 7px 15px 0 #00000005,
+    0 14px 28px 0 #0000000a,
+    0 23px 52px 0 var(--bg-hover-subtle);
 }
 
 .design-system-image-container img {
-	width: 100%;
-	height: auto;
-	pointer-events: none;
-	display: block;
-	max-height: none;
-	object-fit: cover;
-	object-position: top left;
-	aspect-ratio: auto 1550 / 950;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  display: block;
+  max-height: none;
+  object-fit: cover;
+  object-position: top left;
+  aspect-ratio: auto 1550 / 950;
 }
 
 .free-mail-calendar-container {
-	display: grid;
-	gap: var(--space-lg);
+  display: grid;
+  gap: var(--space-lg);
 }
 
 .notion-mail-calendar-section {
-	background-color: var(--paper-background);
-	border-radius: var(--radius-xl);
-	position: relative;
-	overflow: hidden;
-	display: grid;
-	grid-template-columns: 7fr 5fr;
+  background-color: var(--paper-background);
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
 }
 
 .notion-mail-calendar-content {
-	padding: var(--space-lg);
-	margin: 0 auto;
-	width: 100%;
-	position: relative;
-	flex: 1 1;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 16px;
-	overflow: hidden;
+  padding: var(--space-lg);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  overflow: hidden;
 }
 
 .notion-mail-calendar-content svg {
-	width: 48px;
-	height: auto;
+  width: 48px;
+  height: auto;
 }
 
 .notion-mail-calendar-content a {
-	min-height: 2.25rem;
-	padding: var(--space-xs) 0.875rem;
-	font-size: var(--font-size-base);
-	font-weight: 500;
-	border: 1px solid var(--color-border);
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	border-radius: var(--space-sm);
-	color: var(--color-text-main);
+  min-height: 2.25rem;
+  padding: var(--space-xs) 0.875rem;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: var(--space-sm);
+  color: var(--color-text-main);
 }
 
 .notion-mail-calendar-heading h3 {
-	font-size: var(--font-size-sm-heading);
-	font-weight: 700;
+  font-size: var(--font-size-sm-heading);
+  font-weight: 700;
 
-	min-height: 32px;
-	display: flex;
-	align-items: center;
-	cursor: default;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
 
 .notion-mail-calendar-heading p {
-	font-size: var(--font-size-base);
-	font-weight: 500;
-	margin: 4px 0 0;
-	min-height: 24px;
-	display: flex;
-	align-items: center;
-	cursor: default;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  margin: 4px 0 0;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
 
 .notion-mail-calendar-image-container {
-	width: 100%;
-	height: calc(100% - 24px);
-	align-self: flex-end;
-	box-shadow:
-		0 1px 3px 0 #00000003,
-		0 3px 7px 0 #00000005,
-		0 7px 15px 0 #00000005,
-		0 14px 28px 0 #0000000a,
-		0 23px 52px 0 var(--bg-hover-subtle);
-	border-start-start-radius: var(--radius-lg);
+  width: 100%;
+  height: calc(100% - 24px);
+  align-self: flex-end;
+  box-shadow:
+    0 1px 3px 0 #00000003,
+    0 3px 7px 0 #00000005,
+    0 7px 15px 0 #00000005,
+    0 14px 28px 0 #0000000a,
+    0 23px 52px 0 var(--bg-hover-subtle);
+  border-start-start-radius: var(--radius-lg);
 }
 
 .notion-mail-calendar-image-container img {
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	display: block;
-	max-height: none;
-	object-fit: cover;
-	object-position: top left;
-	border-start-start-radius: var(--radius-lg);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: block;
+  max-height: none;
+  object-fit: cover;
+  object-position: top left;
+  border-start-start-radius: var(--radius-lg);
 }
 
 .downloadApps_browserText {
-	font-size: var(--font-size-sm);
-	font-weight: 400;
-	margin: 14px auto;
-	max-width: var(--max-content-width);
-	min-height: 20px;
-	display: flex;
-	align-items: center;
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  margin: 14px auto;
+  max-width: var(--max-content-width);
+  min-height: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .downloadApps_browserText a {
-	color: #000000bf;
+  color: #000000bf;
 }
 
 @media screen and (max-width: 400px) {
-	.free-try-section {
-		padding: var(--space-xl) var(--global-space-x);
-	}
-	.free-try-headings h2 {
-		font-size: var(--font-size-md);
-		line-height: normal;
-	}
-	.free-try-container {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-	}
-	.design-system-content svg {
-		width: 40px;
-	}
-	.design-system-heading h3 {
-		font-size: var(--font-size-bento-title);
-	}
-	.design-system-heading p {
-		font-size: var(--font-size-sm);
-		margin: 0;
-		min-height: 100%;
-	}
-	.windows-download {
-		display: none;
-	}
-	.microsoft-store-download {
-		display: none;
-	}
+  .free-try-section {
+    padding: var(--space-xl) var(--global-space-x);
+  }
+  .free-try-headings h2 {
+    font-size: var(--font-size-md);
+    line-height: normal;
+  }
+  .free-try-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .design-system-content svg {
+    width: 40px;
+  }
+  .design-system-heading h3 {
+    font-size: var(--font-size-bento-title);
+  }
+  .design-system-heading p {
+    font-size: var(--font-size-sm);
+    margin: 0;
+    min-height: 100%;
+  }
+  .windows-download {
+    display: none;
+  }
+  .microsoft-store-download {
+    display: none;
+  }
 
-	.design-system-image-container {
-		margin-top: 16px;
-	}
-	.notion-mail-calendar-section {
-		display: block;
-	}
-	.notion-mail-calendar-image-container {
-		display: none;
-	}
-	.notion-mail-calendar-content svg {
-		width: 40px;
-	}
-	.notion-mail-calendar-heading h3 {
-		font-size: var(--font-size-bento-title);
-	}
-	.notion-mail-calendar-heading p {
-		font-size: var(--font-size-sm);
-		margin: 0;
-		min-height: 100%;
-	}
-	.free-mail-calendar-container {
-		gap: 16px;
-	}
+  .design-system-image-container {
+    margin-top: 16px;
+  }
+  .notion-mail-calendar-section {
+    display: block;
+  }
+  .notion-mail-calendar-image-container {
+    display: none;
+  }
+  .notion-mail-calendar-content svg {
+    width: 40px;
+  }
+  .notion-mail-calendar-heading h3 {
+    font-size: var(--font-size-bento-title);
+  }
+  .notion-mail-calendar-heading p {
+    font-size: var(--font-size-sm);
+    margin: 0;
+    min-height: 100%;
+  }
+  .free-mail-calendar-container {
+    gap: 16px;
+  }
 }
 
 @media screen and (max-width: 1204px) {
-	.free-try-headings h2 {
-		font-size: var(--font-size-md-heading);
-		line-height: 48px;
-	}
-	.design-system-heading p,
-	.notion-mail-calendar-heading p {
-		font-size: var(--font-size-sm);
-		line-height: 20px;
-	}
-	.notion-mail-calendar-content {
-		padding-right: 0;
-	}
-	.design-system-heading p {
-		min-height: auto;
-	}
-	.free-try-container,
-	.free-mail-calendar-container {
-		gap: 28px;
-	}
+  .free-try-headings h2 {
+    font-size: var(--font-size-md-heading);
+    line-height: 48px;
+  }
+  .design-system-heading p,
+  .notion-mail-calendar-heading p {
+    font-size: var(--font-size-sm);
+    line-height: 20px;
+  }
+  .notion-mail-calendar-content {
+    padding-right: 0;
+  }
+  .design-system-heading p {
+    min-height: auto;
+  }
+  .free-try-container,
+  .free-mail-calendar-container {
+    gap: 28px;
+  }
 }
 
 @media screen and (max-width: 988px) {
-	.free-try-headings h2 {
-		font-size: var(--font-size-md);
-		line-height: 40px;
-		letter-spacing: 0;
-	}
-	.design-system-heading h3 {
-		font-size: var(--font-size-bento-title);
-		min-height: auto;
-		line-height: 28px;
-	}
-	.design-system-heading p {
-		font-size: var(--font-size-sm);
-		margin-top: var(--space-xs);
-	}
-	.notion-mail-calendar-heading h3 {
-		font-size: var(--font-size-bento-title);
-		min-height: auto;
-		line-height: 28px;
-	}
-	.notion-mail-calendar-heading p {
-		font-size: var(--font-size-sm);
-		margin-top: var(--space-xs);
-	}
-	.notion-mail-calendar-section {
-		grid-template-columns: 5fr 3fr;
-	}
-	.notion-mail-calendar-heading p {
-		line-height: 20px;
-		min-height: auto;
-	}
+  .free-try-headings h2 {
+    font-size: var(--font-size-md);
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+  .design-system-heading h3 {
+    font-size: var(--font-size-bento-title);
+    min-height: auto;
+    line-height: 28px;
+  }
+  .design-system-heading p {
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-xs);
+  }
+  .notion-mail-calendar-heading h3 {
+    font-size: var(--font-size-bento-title);
+    min-height: auto;
+    line-height: 28px;
+  }
+  .notion-mail-calendar-heading p {
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-xs);
+  }
+  .notion-mail-calendar-section {
+    grid-template-columns: 5fr 3fr;
+  }
+  .notion-mail-calendar-heading p {
+    line-height: 20px;
+    min-height: auto;
+  }
 }
 
 @media screen and (max-width: 940px) {
-	.free-try-container {
-		grid-template-columns: auto;
-	}
+  .free-try-container {
+    grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 840px) {
-	.design-system-content svg,
-	.notion-mail-calendar-content svg {
-		width: 40px;
-		height: auto;
-	}
-	.design-system-heading p,
-	.notion-mail-calendar-heading p {
-		margin-top: 0;
-	}
-	.design-system-image-container {
-		margin-top: var(--radius-xl);
-	}
-	.notion-mail-calendar-image-container {
-		display: none;
-	}
-	.free-try-container,
-	.free-mail-calendar-container {
-		gap: 16px;
-	}
+  .design-system-content svg,
+  .notion-mail-calendar-content svg {
+    width: 40px;
+    height: auto;
+  }
+  .design-system-heading p,
+  .notion-mail-calendar-heading p {
+    margin-top: 0;
+  }
+  .design-system-image-container {
+    margin-top: var(--radius-xl);
+  }
+  .notion-mail-calendar-image-container {
+    display: none;
+  }
+  .free-try-container,
+  .free-mail-calendar-container {
+    gap: 16px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.free-try-section {
-		padding: var(--space-xl) var(--global-space-x);
-	}
+  .free-try-section {
+    padding: var(--space-xl) var(--global-space-x);
+  }
 }
