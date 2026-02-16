@@ -1,0 +1,121 @@
+.header-container {
+	position: sticky;
+	top: 0;
+	background-color: var(--paper-background);
+	padding: 18px 25px 14px;
+	animation: header-border linear forwards;
+	animation-timeline: scroll();
+	animation-range: 1px 0px;
+	z-index: 10;
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+}
+
+.nav-links-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-link-item {
+	padding: 5px 12px;
+	text-decoration: none;
+	line-height: var(--lh-base);
+	font-size: var(--md-font-size);
+	color: var(--color-text-main);
+}
+
+.expandable-nav-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.expandable-nav-link i {
+	font-size: var(--xs-font-size);
+}
+
+.nav-link-item:hover {
+	background-color: var(--bg-hover-subtle);
+	border-radius: var(--radius-sm);
+}
+
+.auth-links {
+	display: flex;
+	gap: 14px;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: -3px; /* kept to avoid visual shift */
+}
+
+.login-btn {
+	font-size: var(--md-font-size);
+}
+
+.notion-free-btn {
+	padding: 9px 14.5px 10px;
+	background-color: var(--btn-primary-bg);
+	color: var(--color-white);
+	border: none;
+	border-radius: var(--radius-md);
+	font-size: var(--md-font-size);
+	font-weight: 400;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	letter-spacing: 0.1px;
+}
+
+.hamburger-menu {
+	width: 22px;
+	height: 22px;
+	display: none;
+}
+
+/* Scroll border animation */
+@keyframes header-border {
+	to {
+		border-bottom-color: var(--border-color);
+		box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.3);
+	}
+}
+
+/* Small screens */
+@media screen and (max-width: 400px) {
+	.login-btn {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.header-container {
+		padding: 18px 16px 15px 18px;
+	}
+
+	.auth-links {
+		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.navbar {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.nav-links-section {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.login-btn {
+		display: none;
+	}
+}
