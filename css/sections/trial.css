@@ -37,7 +37,7 @@
   flex-direction: column;
   overflow: hidden;
   background-color: var(--paper-background);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   height: fit-content;
 }
 
@@ -185,7 +185,7 @@
 
 .notion-mail-calendar-section {
   background-color: var(--paper-background);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   position: relative;
   overflow: hidden;
   display: grid;

@@ -200,7 +200,6 @@ footer {
   min-height: 20px;
   display: flex;
   align-items: center;
-  cursor: default;
 }
 
 .notion-links-content h5 span {
