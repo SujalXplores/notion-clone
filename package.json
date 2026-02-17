@@ -1,0 +1,25 @@
+{
+  "name": "notion-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{html,css}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anchal789/notion-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Anchal789/notion-clone/issues"
+  },
+  "homepage": "https://github.com/Anchal789/notion-clone#readme",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}

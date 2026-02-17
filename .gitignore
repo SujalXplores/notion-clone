@@ -1,0 +1,21 @@
+# This is a comment - ignore all .log files
+*.log
+
+# Ignore the entire node_modules folder
+node_modules/
+
+# Ignore local environment variables (secrets)
+.env
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build output folders
+dist/
+build/
+bin/
+
+# Exception: ignore all .txt files EXCEPT notes.txt
+*.txt
+!notes.txt

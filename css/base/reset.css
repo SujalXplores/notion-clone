@@ -1,18 +1,26 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	font-size: var(--lg-font-size);
-	height: 100%;
+  font-size: var(--lg-font-size);
+  height: 100%;
 }
 
 body {
-	font-family: "Inter", sans-serif;
-	font-weight: 500;
-	min-height: 100%;
+  font-family: var(--default-font-family);
+  font-weight: 500;
+  min-height: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit; 
 }
