@@ -37,12 +37,24 @@
   color: var(--btn-primary-bg);
   font-weight: 400;
   line-height: 24px;
+  width: fit-content;
   margin-top: 1rem;
 }
 
 .aiUses-headings a:hover {
-  text-decoration: underline;
   color: #00396b;
+}
+
+.aiUses-headings a span:first-child:hover {
+  text-decoration: underline;
+}
+
+.aiUses-headings a span {
+  text-decoration: none;
+}
+
+.aiUses-headings a span:last-child {
+  margin-inline-start: .2em;
 }
 
 .aiUses-header-img-container {

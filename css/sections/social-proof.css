@@ -95,11 +95,23 @@
   min-height: 24px;
   display: flex;
   align-items: center;
+  width: fit-content;
 }
 
 .openAi-quote-block a:hover {
-  text-decoration: underline;
   color: #00396b;
+}
+
+.openAi-quote-block a span:first-child:hover {
+  text-decoration: underline;
+}
+
+.openAi-quote-block a span {
+  text-decoration: none;
+}
+
+.link-arrow {
+  margin-inline-start: 0.2em;
 }
 
 .open-ai-image {

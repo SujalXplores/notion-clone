@@ -15,16 +15,21 @@
   padding: 18px 25px 14px;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .nav-links-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   position: inherit;
+  gap: 4px;
 }
 
 .nav-link-item {
-  padding: 5px 12px;
+  padding: 5px 10px;
   text-decoration: none;
   line-height: var(--lh-base);
   font-size: var(--md-font-size);
@@ -221,7 +226,7 @@
 
 .auth-links {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   justify-content: flex-end;
   align-items: center;
   margin-top: -3px; /* kept to avoid visual shift */
@@ -239,11 +244,15 @@
   border: none;
   border-radius: var(--radius-md);
   font-size: var(--font-size-sm);
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
   letter-spacing: 0.1px;
   line-height: 20px;
+}
+
+.notion-free-btn:hover {
+  background-color: var(--btn-primary-bg-hover);
 }
 
 .hamburger-menu {

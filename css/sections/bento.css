@@ -46,6 +46,12 @@
   box-shadow: var(--hover-box-shadow);
 }
 
+.bento-ai-uses-link{
+  height: fit-content;
+  text-decoration: none;
+  color: inherit;
+}
+
 .bentoCarousel-first {
   padding: 24px;
   display: flex;
@@ -66,7 +72,7 @@
 }
 
 .badged-heading div {
-  color: #005bab;
+  color: var(--btn-primary-bg-hover);
   background-color: #f2f9ff;
   font-size: var(--sm-font-size);
   font-weight: 500;
@@ -257,6 +263,10 @@
   border: none;
   background-color: var(--paper-background);
   text-align: start;
+}
+
+.bentoCarousel-content-buttons[aria-selected="true"] {
+  cursor: default;
 }
 
 .bentoCarousel-content-buttons[aria-selected="false"]:hover {
@@ -642,7 +652,6 @@
   position: relative;
   justify-content: space-between;
   flex-direction: column;
-  overflow: hidden;
   transition: box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -652,7 +661,6 @@
 
 .flexible-workflows-header {
   grid-column: 1;
-  padding: var(--space-lg);
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -673,12 +681,19 @@
 }
 
 .flexible-workflows-heading h2 {
-  max-width: 90%;
-
+  max-width: 100%;
   font-size: var(--font-size-bento-title);
   line-height: var(--lh-sm);
   font-weight: 700;
   text-wrap: balance;
+}
+
+@media screen and (min-width: 960px) {
+  
+  .flexible-workflows-heading h2{
+    max-width: 67%;
+    text-wrap: balance;
+  }
 }
 
 .flexible-workflows_ImagesWrapper {
@@ -903,7 +918,7 @@
     justify-content: space-between;
     align-items: end;
   }
-  .bentoCarousel-heading a,
+  .bentoCarousel-heading div,
   .flexible-workflows-heading a {
     display: flex;
   }

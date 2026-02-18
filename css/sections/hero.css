@@ -61,8 +61,6 @@
   max-width: 55%;
   font-size: var(--font-size-xl-heading);
   padding: 0;
-  text-wrap: balance;
-  text-align: center;
   font-weight: 700;
   cursor: default;
   line-height: var(--lh-xl);
@@ -88,7 +86,7 @@
 }
 
 .hero-am-buttons button {
-  padding: 0.875rem 1.25rem;
+  padding: 0.6875rem 1.25rem;
   min-height: 2.875rem;
   background-color: var(--btn-primary-bg);
   color: var(--color-white);
@@ -97,6 +95,7 @@
   font-size: var(--lg-font-size);
   font-weight: 600;
   cursor: pointer;
+  border: 1px solid #0000;
 }
 
 .hero-am-buttons button:hover {
@@ -107,7 +106,7 @@
   padding: 0.6875rem 1.25rem;
   min-height: 3rem;
   background-color: #e6f3fe;
-  color: #005bab;
+  color: var(--btn-primary-bg-hover);
   border: none;
   border-radius: var(--radius-md);
   font-size: var(--lg-font-size);
@@ -150,7 +149,7 @@
   row-gap: 16px;
   align-items: center;
   position: relative;
-
+  min-height: 21.13px;
   max-width: var(--max-content-width);
   width: 100%;
 }
@@ -159,7 +158,7 @@
   color: var(--color-text-light);
   font-weight: 400;
   font-size: var(--md-font-size);
-  min-width: 20ch;
+  min-width: 175px;
   min-height: 20px;
 }
 
@@ -461,6 +460,12 @@
   }
   .fall-hero-animation {
     margin-top: var(--space-md);
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .trusted-teams {
+    position: relative;
   }
 }
 
