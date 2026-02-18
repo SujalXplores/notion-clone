@@ -2,7 +2,7 @@ footer {
   flex-direction: row;
   gap: 24px;
   padding: 80px 125px;
-  color: var(--color-text-header);
+  color: var(--color-text-main);
   display: flex;
   position: relative;
   margin: 0 auto;
@@ -45,6 +45,10 @@ footer {
 
 .social-links a:hover {
   background-color: var(--color-border);
+}
+
+.social-links a:active {
+  background-color: #0003;
 }
 
 .shareInstagram {
@@ -104,7 +108,7 @@ footer {
 }
 
 .license-info button {
-  color: #000000f2;
+  color: var(--color-text-headings);
   font-size: var(--font-size-base);
   font-weight: 500;
   border: 1px solid var(--color-border);
@@ -181,7 +185,7 @@ footer {
   cursor: pointer;
   color: #31302e;
   display: flex;
-  gap: .2rem;
+  gap: 0.2rem;
   margin-top: 0.4rem;
   line-height: 1.35rem;
   text-align: left;

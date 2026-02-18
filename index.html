@@ -231,14 +231,12 @@
         <div class="center-container">
           <div class="hero-animation-container">
             <picture class="hero-animation">
-              <img
-                src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fhome%2Ffall%2Fhero%2Fhomepage-hero-animation-lf.png&w=3840&q=75"
-                width="100%"
-                height="auto"
-                alt="Notion hero animation"
-                loading="lazy"
-                decoding="async"
-              />
+              <video width="100%" height="auto" autoplay playsinline muted>
+                <source
+                  src="https://www.notion.com/front-static/pages/home/fall/hero/homepage-hero-animation.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </picture>
           </div>
           <div class="hero-am-content">
@@ -881,7 +879,7 @@
           <div class="calculation-section">
             <div class="team-size-section">
               <label for="teamSize">Team size</label>
-              <input type="number" id="teamSize" value="10" />
+              <input type="number" id="teamSize" value="10" min="1" size="3" />
             </div>
             <div class="monthly-savings-section">
               <p>Monthly savings</p>
