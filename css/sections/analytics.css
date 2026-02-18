@@ -49,11 +49,11 @@
   color: #00396b;
 }
 
-.analytics-headings a span:first-child:hover{
+.analytics-headings a span:first-child:hover {
   text-decoration: underline;
 }
 
-.analytics-headings a span{
+.analytics-headings a span {
   text-decoration: none;
 }
 
@@ -159,6 +159,19 @@
   cursor: pointer;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+  display: block;
+}
+
+.team-size-section input:focus-visible {
+  outline: var(--btn-primary-bg);
+  outline-offset: 2px;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
 .monthly-savings-section {
   display: flex;
   flex-direction: column;
@@ -254,7 +267,7 @@
   }
 }
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 1079px) {
   .analytics-headings h2 {
     font-size: var(--font-size-md);
     line-height: 40px;

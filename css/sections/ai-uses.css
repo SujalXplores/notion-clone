@@ -29,7 +29,7 @@
   font-weight: 400;
   letter-spacing: 0;
   line-height: 24px;
-  margin-top: 1.25rem;
+  margin-top: var(--space-md);
 }
 
 .aiUses-headings a {
@@ -153,9 +153,6 @@
     font-size: var(--font-size-md);
     line-height: 40px;
     letter-spacing: 0;
-  }
-  .aiUses-headings p {
-    margin-top: var(--space-md);
   }
   .aiUses-card-container {
     grid-template-columns: repeat(2, 1fr);

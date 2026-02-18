@@ -31,9 +31,10 @@
 .nav-link-item {
   padding: 5px 10px;
   text-decoration: none;
-  line-height: var(--lh-base);
   font-size: var(--md-font-size);
   color: var(--color-text-main);
+  line-height: var(--lh-base);
+  display: inline-block;
 }
 
 .nav-expand-container {
@@ -315,7 +316,9 @@
   .header-container {
     padding: 18px 16px 15px 18px;
   }
-
+  .navbar {
+    padding: 0;
+  }
   .auth-links {
     gap: 16px;
   }

@@ -15,7 +15,7 @@
   font-size: var(--font-size-lg-heading);
   line-height: var(--lh-lg);
   font-weight: 700;
-
+  color: var(--color-text-headings);
   margin-bottom: var(--space-xl);
 }
 
@@ -254,7 +254,7 @@
   font-size: var(--lg-font-size);
   font-weight: 500;
   line-height: var(--lh-xs);
-  color: var(--color-text-header);
+  color: var(--color-text-main);
 }
 
 .bentoCarousel-content-buttons {

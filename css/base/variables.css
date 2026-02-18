@@ -20,10 +20,10 @@
   --color-text-light: #0000008a;
   --color-border: #0000001a;
 
-  --color-text-main: rgba(0, 0, 0, 0.9);
+  --color-text-main: #000000e6;
   --color-text-muted: #00000096;
-  --color-text-header: #000000e6;
   --color-white: #ffffff;
+  --color-text-headings: #000000f2;
   --bg-hover-subtle: #0000000d;
 
   --font-size-xl-heading: 4rem;
