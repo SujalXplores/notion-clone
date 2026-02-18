@@ -61,8 +61,6 @@
   max-width: 55%;
   font-size: var(--font-size-xl-heading);
   padding: 0;
-  text-wrap: balance;
-  text-align: center;
   font-weight: 700;
   cursor: default;
   line-height: var(--lh-xl);
@@ -108,7 +106,7 @@
   padding: 0.6875rem 1.25rem;
   min-height: 3rem;
   background-color: #e6f3fe;
-  color: #005bab;
+  color: var(--btn-primary-bg-hover);
   border: none;
   border-radius: var(--radius-md);
   font-size: var(--lg-font-size);

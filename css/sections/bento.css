@@ -72,7 +72,7 @@
 }
 
 .badged-heading div {
-  color: #005bab;
+  color: var(--btn-primary-bg-hover);
   background-color: #f2f9ff;
   font-size: var(--sm-font-size);
   font-weight: 500;
@@ -652,7 +652,6 @@
   position: relative;
   justify-content: space-between;
   flex-direction: column;
-  overflow: hidden;
   transition: box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -662,7 +661,6 @@
 
 .flexible-workflows-header {
   grid-column: 1;
-  padding: var(--space-lg);
   padding: 24px;
   display: flex;
   flex-direction: column;

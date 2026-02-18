@@ -252,7 +252,7 @@
 }
 
 .notion-free-btn:hover {
-  background-color: #005bab;
+  background-color: var(--btn-primary-bg-hover);
 }
 
 .hamburger-menu {

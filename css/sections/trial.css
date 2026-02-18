@@ -89,7 +89,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  word-break: break-word;
+  overflow-wrap: break-word;
   white-space: nowrap;
   border-radius: var(--space-sm);
   border: 1px solid #0000;
@@ -115,7 +115,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  word-break: break-word;
+  overflow-wrap: break-word;
   white-space: nowrap;
   border-radius: var(--space-sm);
   border: 1px solid #0000;
@@ -124,7 +124,7 @@
 }
 
 .ios-download:hover {
-  background-color: #005bab;
+  background-color: var(--btn-primary-bg-hover);
 }
 
 .ios-download svg {
@@ -141,7 +141,7 @@
   min-height: 2.25rem;
   padding: var(--space-xs) 0.875rem;
   display: block;
-  word-break: break-word;
+  overflow-wrap: break-word;
   white-space: nowrap;
   border-radius: var(--space-sm);
   border: 1px solid #0000;
@@ -228,7 +228,7 @@
 }
 
 .notion-mail-calendar-content a:hover {
-  background-color: #f6f5f4;
+  background-color: var(--default-background);
 }
 
 .notion-mail-calendar-heading h3 {

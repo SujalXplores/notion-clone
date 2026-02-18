@@ -344,13 +344,10 @@
   .monthly-savings-section h2,
   .annual-savings-section h2 {
     font-size: var(--font-size-sm-heading);
+    line-height: 32px;
   }
   .team-size-section input {
     font-size: var(--font-size-sm-heading);
-    line-height: 32px;
-  }
-  .monthly-savings-section h2,
-  .annual-savings-section h2 {
     line-height: 32px;
   }
 }

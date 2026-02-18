@@ -157,7 +157,6 @@ footer {
 .notion-links-content {
   padding: 0;
   list-style: none;
-  page-break-inside: avoid;
   break-inside: avoid;
   display: flex;
   flex-direction: column;
@@ -186,11 +185,11 @@ footer {
   margin-top: 0.4rem;
   line-height: 1.35rem;
   text-align: left;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
   text-decoration: none;
 }
 
-.notion-links-content a h5:hover {
+.explore-more h5:hover {
   text-decoration: underline;
 }
 
