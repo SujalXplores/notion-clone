@@ -281,12 +281,21 @@
   margin: 14px auto;
   max-width: var(--max-content-width);
   min-height: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .downloadApps_browserText a {
+  white-space: normal;
+  color: var(--color-text-main);
+}
+
+.downloadApps_browserText a:hover {
   color: #000000bf;
+}
+
+@media screen and (max-width: 519px) {
+  .notion-mail-calendar-section {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -322,9 +331,6 @@
 
   .design-system-image-container {
     margin-top: 16px;
-  }
-  .notion-mail-calendar-section {
-    display: block;
   }
   .notion-mail-calendar-image-container {
     display: none;

@@ -46,7 +46,7 @@
   box-shadow: var(--hover-box-shadow);
 }
 
-.bento-ai-uses-link{
+.bento-ai-uses-link {
   height: fit-content;
   text-decoration: none;
   color: inherit;
@@ -57,6 +57,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+}
+
+.bentoCarousel-first:hover .arrow-right {
+  background-color: #31302e;
 }
 
 .badged-heading {
@@ -75,9 +79,21 @@
   color: var(--btn-primary-bg-hover);
   background-color: #f2f9ff;
   font-size: var(--sm-font-size);
-  font-weight: 500;
+  font-weight: 600;
   padding: 2px 7px;
   border-radius: var(--radius-circle);
+  line-height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bento-badge {
+  height: auto;
+}
+
+.coming-soon-badge {
+  height: 100%;
 }
 
 .bentoCarousel-heading {
@@ -689,8 +705,7 @@
 }
 
 @media screen and (min-width: 960px) {
-  
-  .flexible-workflows-heading h2{
+  .flexible-workflows-heading h2 {
     max-width: 67%;
     text-wrap: balance;
   }

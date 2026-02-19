@@ -185,7 +185,7 @@ footer {
   cursor: pointer;
   color: #31302e;
   display: flex;
-  gap: 0.2rem;
+  gap: 3px;
   margin-top: 0.4rem;
   line-height: 1.35rem;
   text-align: left;
@@ -204,6 +204,7 @@ footer {
   min-height: 20px;
   display: flex;
   align-items: center;
+  color: #000;
 }
 
 .explore-more {
@@ -211,6 +212,10 @@ footer {
   justify-content: flex-end;
   height: 100%;
   align-items: flex-end;
+}
+
+.explore-more h5:hover {
+  color: #000000bf;
 }
 
 @media screen and (max-width: 1080px) {
@@ -221,6 +226,9 @@ footer {
   }
   .notion-links-container {
     grid-template-columns: repeat(2, minmax(10px, 1fr));
+    width: 100%;
+  }
+  .notion-license-container {
     width: 100%;
   }
 }
@@ -234,17 +242,11 @@ footer {
   footer {
     padding: 40px 32px;
   }
-  .notion-license-container {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 400px) {
   footer {
     padding: 40px 16px;
-  }
-  .notion-license-container {
-    width: 100%;
   }
   .notion-links-container {
     width: 100%;

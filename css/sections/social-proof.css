@@ -116,6 +116,12 @@
 
 .open-ai-image {
   display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.open-ai-image:hover {
+  opacity: 0.9;
 }
 
 .open-ai-image img {
@@ -123,6 +129,23 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.open-ai-play-button {
+  --icon-size: 40px;
+  --icon-font-size: 22px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-color: var(--paper-background);
+  border-radius: 50%;
+  color: #615d59;
+  font-size: 22px;
 }
 
 .social-proof-card {
@@ -254,6 +277,7 @@
   max-width: var(--max-content-width);
   margin: 16px auto 0 auto;
   position: relative;
+  overflow: clip;
 }
 
 .marquee {

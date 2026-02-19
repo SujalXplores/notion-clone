@@ -130,7 +130,7 @@
   gap: var(--space-lg);
 }
 
-.calculation-section div {
+.calculation-section div, .calculation-section label {
   grid-column: span 4;
 }
 
@@ -267,6 +267,12 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .analytics-headings {
+    min-width: 100%;
+  }
+}
+
 @media screen and (max-width: 1079px) {
   .analytics-headings h2 {
     font-size: var(--font-size-md);
@@ -297,6 +303,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .analytics-headings p {
     margin-top: 1rem;
+    max-inline-size: 100%;
   }
   .checkbox-container label {
     line-height: 24px;
@@ -351,7 +358,8 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: var(--space-xl) var(--global-space-x);
   }
   .startup-pricing-calculator {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: var(--space-md);
   }
   .monthly-savings-section h2,
