@@ -24,6 +24,7 @@
   text-wrap: balance;
   min-width: 628px;
   cursor: default;
+  color: var(--color-text-headings);
 }
 
 .analytics-headings p {
@@ -34,6 +35,7 @@
   align-items: center;
   margin-top: 1.25rem;
   cursor: default;
+  color: var(--color-text-main);
 }
 
 .analytics-headings a {
@@ -109,6 +111,7 @@
   font-size: var(--font-size-base);
   font-weight: 600;
   text-wrap: balance;
+  color: var(--color-text-main);
 }
 
 .checkbox-container label span {
@@ -130,8 +133,10 @@
   gap: var(--space-lg);
 }
 
-.calculation-section div, .calculation-section label {
+.calculation-section div,
+.calculation-section label {
   grid-column: span 4;
+  color: var(--color-text-main);
 }
 
 .team-size-section {

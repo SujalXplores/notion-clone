@@ -193,7 +193,7 @@ footer {
   text-decoration: none;
 }
 
-.explore-more h5:hover {
+.explore-more h5:hover , .notion-links-content a:hover {
   text-decoration: underline;
 }
 

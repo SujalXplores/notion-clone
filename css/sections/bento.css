@@ -73,6 +73,7 @@
   font-size: var(--lg-font-size);
   font-weight: 400;
   line-height: var(--lh-xs);
+  color: var(--color-text-headings);
 }
 
 .badged-heading div {
@@ -107,6 +108,11 @@
   font-size: var(--font-size-bento-title);
   line-height: var(--lh-sm);
   font-weight: 700;
+  color: var(--color-text-headings);
+}
+
+.bento-card-text {
+  color: var(--color-text-main);
 }
 
 .arrow-right {
@@ -830,6 +836,7 @@
   text-indent: -0.5em;
   letter-spacing: 0;
   margin-bottom: 1rem;
+  color: var(--color-text-headings);
 }
 
 .forbesQuote p::before {

@@ -21,6 +21,7 @@
   line-height: var(--lh-lg);
   text-wrap: balance;
   min-width: min(628px, 100%);
+  color: var(--color-text-headings);  
 }
 
 .social-proof-container {
@@ -77,6 +78,7 @@
   font-family: var(--lyon-font-family);
   flex-grow: 1;
   letter-spacing: -0.5px;
+  color: var(--color-text-headings);
 }
 
 .openAi-quote-block p::before {
@@ -258,6 +260,7 @@
   font-size: var(--font-size-base);
   line-height: var(--lh-xs);
   font-weight: 400;
+  color: var(--color-text-main);
 }
 
 .social-proof-quoted-text {

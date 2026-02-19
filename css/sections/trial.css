@@ -22,6 +22,7 @@
   text-wrap: balance;
   min-width: min(628px, 100%);
   cursor: default;
+  color: var(--color-text-headings);
 }
 
 .free-try-container {
@@ -62,7 +63,7 @@
 .design-system-heading h3 {
   font-size: var(--font-size-sm-heading);
   font-weight: 700;
-
+  color: var(--color-text-main);
   min-height: 32px;
   display: flex;
   align-items: center;
@@ -77,6 +78,7 @@
   display: flex;
   align-items: center;
   cursor: default;
+  color: var(--color-text-main);
 }
 
 .windows-download {
@@ -234,7 +236,7 @@
 .notion-mail-calendar-heading h3 {
   font-size: var(--font-size-sm-heading);
   font-weight: 700;
-
+  color: var(--color-text-main);
   min-height: 32px;
   display: flex;
   align-items: center;
@@ -249,6 +251,7 @@
   display: flex;
   align-items: center;
   cursor: default;
+  color: var(--color-text-main);
 }
 
 .notion-mail-calendar-image-container {
@@ -281,6 +284,7 @@
   margin: 14px auto;
   max-width: var(--max-content-width);
   min-height: 20px;
+  color: var(--color-text-main);
 }
 
 .downloadApps_browserText a {
