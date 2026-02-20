@@ -113,7 +113,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   line-height: 24px;
-  border: 1px solid #0000;
+  border: 1px solid #fff0;
 }
 
 .hero-am-buttons button:last-child:hover {

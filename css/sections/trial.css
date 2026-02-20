@@ -226,7 +226,7 @@
   display: flex;
   align-items: center;
   border-radius: var(--space-sm);
-  color: var(--color-text-main);
+  color: var(--color-text-headings);
 }
 
 .notion-mail-calendar-content a:hover {

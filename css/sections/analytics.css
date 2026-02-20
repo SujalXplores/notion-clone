@@ -59,6 +59,10 @@
   text-decoration: none;
 }
 
+.analytics-headings a span:last-child {
+  margin-inline-start: 0.2em;
+}
+
 .analytics-header-img-container {
   display: flex;
   align-items: end;
@@ -186,6 +190,13 @@ input[type="number"]::-webkit-inner-spin-button {
   display: block;
 }
 
+.team-size-section input:hover {
+  box-shadow:
+    0px 3px 9px #00000008,
+    0px 0.7px 1.4625px rgba(0, 0, 0, 0.015);
+  border-color: var(--btn-primary-bg);
+}
+
 .team-size-section input:focus-visible {
   outline: var(--btn-primary-bg);
   outline-offset: 2px;
@@ -307,18 +318,21 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .startup-pricing-calculator {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
   .checkbox-section {
     grid-template-columns: auto;
     gap: 0;
     padding: var(--space-xs);
+    grid-column: 1;
+    margin-right: 0;
   }
   .calculation-section {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    grid-column: 2;
   }
   .team-size-section {
     margin-bottom: auto;
@@ -338,6 +352,12 @@ input[type="number"]::-webkit-inner-spin-button {
   .monthly-savings-section,
   .annual-savings-section {
     gap: 6px;
+  }
+  .checkbox-container {
+    left: 0;
+  }
+  .team-size-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -396,5 +416,9 @@ input[type="number"]::-webkit-inner-spin-button {
   .team-size-section input {
     font-size: var(--font-size-sm-heading);
     line-height: 32px;
+  }
+  .team-size-container {
+    display: flex;
+    flex-direction: column;
   }
 }
