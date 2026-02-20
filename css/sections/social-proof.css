@@ -259,7 +259,7 @@
   font-size: var(--font-size-base);
   line-height: var(--lh-xs);
   font-weight: 400;
-  color: var(--color-text-main);
+  color: var(--color-text-headings);
 }
 
 .social-proof-quoted-text {

@@ -59,6 +59,10 @@
   text-decoration: none;
 }
 
+.analytics-headings a span:last-child {
+  margin-inline-start: 0.2em;
+}
+
 .analytics-header-img-container {
   display: flex;
   align-items: end;
@@ -88,7 +92,6 @@
   grid-template-columns: subgrid;
   grid-column: 1 / -1;
   column-gap: var(--space-lg);
-  margin-right: calc(var(--space-lg) * -1);
   padding: 0 var(--space-lg);
   /* row-gap: 0.3rem; */
 }
@@ -101,7 +104,6 @@
   gap: 0.5rem;
   cursor: pointer;
   padding: var(--space-xs) 0;
-  left: calc((1.25rem) * -1);
 }
 
 .checkbox-container input {
@@ -184,6 +186,11 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
   display: block;
+}
+
+.team-size-section input:hover {
+  box-shadow: var(--input-box-shadow);
+  border-color: var(--btn-primary-bg);
 }
 
 .team-size-section input:focus-visible {
@@ -293,6 +300,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .checkbox-section {
+    margin-right: calc(var(--space-lg) * -1);
+  }
+  .checkbox-container {
+    left: calc((1.25rem) * -1);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .analytics-headings {
     min-width: 100%;
@@ -307,18 +323,21 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .startup-pricing-calculator {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
   .checkbox-section {
     grid-template-columns: auto;
     gap: 0;
     padding: var(--space-xs);
+    grid-column: 1;
+    margin-right: 0;
   }
   .calculation-section {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    grid-column: 2;
   }
   .team-size-section {
     margin-bottom: auto;
@@ -338,6 +357,12 @@ input[type="number"]::-webkit-inner-spin-button {
   .monthly-savings-section,
   .annual-savings-section {
     gap: 6px;
+  }
+  .checkbox-container {
+    left: 0;
+  }
+  .team-size-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -396,5 +421,9 @@ input[type="number"]::-webkit-inner-spin-button {
   .team-size-section input {
     font-size: var(--font-size-sm-heading);
     line-height: 32px;
+  }
+  .team-size-container {
+    display: flex;
+    flex-direction: column;
   }
 }

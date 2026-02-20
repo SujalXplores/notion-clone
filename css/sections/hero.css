@@ -95,7 +95,7 @@
   font-size: var(--lg-font-size);
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #fff0;
+  border: 1px solid #fff0; /* Intentionally code this to match exact notion original border color. */
 }
 
 .hero-am-buttons button:first-child:hover {
@@ -113,7 +113,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   line-height: 24px;
-  border: 1px solid #0000;
+  border: 1px solid #fff0; /* Intentionally code this to match exact notion original border color. */
 }
 
 .hero-am-buttons button:last-child:hover {

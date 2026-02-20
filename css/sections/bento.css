@@ -73,7 +73,7 @@
   font-size: var(--lg-font-size);
   font-weight: 400;
   line-height: var(--lh-xs);
-  color: var(--color-text-headings);
+  color: var(--color-text-main);
 }
 
 .badged-heading div {
@@ -108,7 +108,7 @@
   font-size: var(--font-size-bento-title);
   line-height: var(--lh-sm);
   font-weight: 700;
-  color: var(--color-text-headings);
+  color: var(--color-text-main);
 }
 
 .bento-card-text {
@@ -709,7 +709,9 @@
   font-weight: 700;
   text-wrap: balance;
 }
-
+.flexible-workflow-heading-breaker {
+  display: inline;
+}
 @media screen and (min-width: 960px) {
   .flexible-workflows-heading h2 {
     max-width: 67%;
@@ -887,6 +889,9 @@
   .slideAVideo {
     border-top-left-radius: 0.375rem;
   }
+  .flexible-workflows-heading h2 {
+    font-size: var(--font-size-subheading);
+  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -1012,6 +1017,9 @@
   .flexible-workflows_ImagesWrapper {
     grid-column: 1;
   }
+  .flexible-workflow-heading-breaker {
+    display: none;
+  }
 }
 @media screen and (max-width: 903px) {
   .bentoCarousel-container {
@@ -1059,7 +1067,7 @@
     border-top-left-radius: 0.375rem;
   }
   .bentoCarousel-heading p {
-    font-size: 1.25rem;
+    font-size: var(--font-size-subheading);
     max-width: 88%;
   }
   .bentoCarousel-heading {
@@ -1151,9 +1159,6 @@
   .flexible-workflows-heading {
     flex-direction: row;
   }
-  .flexible-workflows-heading h2 {
-    font-size: 1.25rem;
-  }
   .flexible-workflows-heading a {
     align-self: flex-end;
   }
@@ -1218,5 +1223,17 @@
   }
   .ai-meetings-header h4 {
     margin-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .flexible-workflow-heading-breaker {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .flexible-workflow-heading-breaker {
+    display: none;
   }
 }

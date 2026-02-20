@@ -193,7 +193,7 @@ footer {
   text-decoration: none;
 }
 
-.explore-more h5:hover , .notion-links-content a:hover {
+.notion-links-content a:not(.explore-more a):hover {
   text-decoration: underline;
 }
 
@@ -214,8 +214,13 @@ footer {
   align-items: flex-end;
 }
 
+.explore-more a {
+  text-decoration: none;
+}
+
 .explore-more h5:hover {
   color: #000000bf;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1080px) {
