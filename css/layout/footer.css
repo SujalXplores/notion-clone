@@ -181,7 +181,6 @@ footer {
 .notion-links-content a {
   font-size: 0.9375rem;
   font-weight: 400;
-  display: block;
   cursor: pointer;
   color: #31302e;
   display: flex;
@@ -204,7 +203,6 @@ footer {
   min-height: 20px;
   display: flex;
   align-items: center;
-  color: #000;
 }
 
 .explore-more {
@@ -214,12 +212,11 @@ footer {
   align-items: flex-end;
 }
 
-.explore-more a {
-  text-decoration: none;
+.explore-more a:hover {
+  color: #000000bf;
 }
 
 .explore-more h5:hover {
-  color: #000000bf;
   text-decoration: underline;
 }
 
